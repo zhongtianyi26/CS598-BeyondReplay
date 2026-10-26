@@ -1,0 +1,889 @@
+{
+  "schema_version": 1,
+  "config_status": "draft_pending_member_b",
+  "score_scheme": "throughput_symmedian_v1",
+  "failure_threshold": 0.2,
+  "failure_rule": "score > threshold",
+  "baseline": {
+    "variant_id": "baseline",
+    "trace_id": "0eec24a5955a89167d9a",
+    "family": "baseline",
+    "magnitude": 0,
+    "expected_pairs": 5,
+    "valid_pairs": 0,
+    "states": {
+      "pending": 5
+    },
+    "complete": false,
+    "score_from_median_throughputs": null,
+    "is_failure": null,
+    "run_score_stdev": null,
+    "run_score_range": null
+  },
+  "cells": [
+    {
+      "family": "bandwidth",
+      "magnitude": 0.05,
+      "requested": 5,
+      "generated": 5,
+      "attempts": 13,
+      "shortfall": 0,
+      "complete_variants": 0,
+      "incomplete_variants": 5,
+      "failure_fraction_of_complete_variants": null,
+      "retention_rate": null,
+      "retention_reason": "baseline_not_confirmed_failure"
+    },
+    {
+      "family": "bandwidth",
+      "magnitude": 0.1,
+      "requested": 5,
+      "generated": 5,
+      "attempts": 5,
+      "shortfall": 0,
+      "complete_variants": 0,
+      "incomplete_variants": 5,
+      "failure_fraction_of_complete_variants": null,
+      "retention_rate": null,
+      "retention_reason": "baseline_not_confirmed_failure"
+    },
+    {
+      "family": "bandwidth",
+      "magnitude": 0.2,
+      "requested": 5,
+      "generated": 5,
+      "attempts": 5,
+      "shortfall": 0,
+      "complete_variants": 0,
+      "incomplete_variants": 5,
+      "failure_fraction_of_complete_variants": null,
+      "retention_rate": null,
+      "retention_reason": "baseline_not_confirmed_failure"
+    },
+    {
+      "family": "delay",
+      "magnitude": 0.05,
+      "requested": 5,
+      "generated": 5,
+      "attempts": 7,
+      "shortfall": 0,
+      "complete_variants": 0,
+      "incomplete_variants": 5,
+      "failure_fraction_of_complete_variants": null,
+      "retention_rate": null,
+      "retention_reason": "baseline_not_confirmed_failure"
+    },
+    {
+      "family": "delay",
+      "magnitude": 0.1,
+      "requested": 5,
+      "generated": 5,
+      "attempts": 5,
+      "shortfall": 0,
+      "complete_variants": 0,
+      "incomplete_variants": 5,
+      "failure_fraction_of_complete_variants": null,
+      "retention_rate": null,
+      "retention_reason": "baseline_not_confirmed_failure"
+    },
+    {
+      "family": "delay",
+      "magnitude": 0.2,
+      "requested": 5,
+      "generated": 5,
+      "attempts": 5,
+      "shortfall": 0,
+      "complete_variants": 0,
+      "incomplete_variants": 5,
+      "failure_fraction_of_complete_variants": null,
+      "retention_rate": null,
+      "retention_reason": "baseline_not_confirmed_failure"
+    },
+    {
+      "family": "timing",
+      "magnitude": 0.05,
+      "requested": 5,
+      "generated": 5,
+      "attempts": 5,
+      "shortfall": 0,
+      "complete_variants": 0,
+      "incomplete_variants": 5,
+      "failure_fraction_of_complete_variants": null,
+      "retention_rate": null,
+      "retention_reason": "baseline_not_confirmed_failure"
+    },
+    {
+      "family": "timing",
+      "magnitude": 0.1,
+      "requested": 5,
+      "generated": 5,
+      "attempts": 5,
+      "shortfall": 0,
+      "complete_variants": 0,
+      "incomplete_variants": 5,
+      "failure_fraction_of_complete_variants": null,
+      "retention_rate": null,
+      "retention_reason": "baseline_not_confirmed_failure"
+    },
+    {
+      "family": "timing",
+      "magnitude": 0.2,
+      "requested": 5,
+      "generated": 5,
+      "attempts": 5,
+      "shortfall": 0,
+      "complete_variants": 0,
+      "incomplete_variants": 5,
+      "failure_fraction_of_complete_variants": null,
+      "retention_rate": null,
+      "retention_reason": "baseline_not_confirmed_failure"
+    }
+  ],
+  "variants": [
+    {
+      "variant_id": "baseline",
+      "trace_id": "0eec24a5955a89167d9a",
+      "family": "baseline",
+      "magnitude": 0,
+      "expected_pairs": 5,
+      "valid_pairs": 0,
+      "states": {
+        "pending": 5
+      },
+      "complete": false,
+      "score_from_median_throughputs": null,
+      "is_failure": null,
+      "run_score_stdev": null,
+      "run_score_range": null
+    },
+    {
+      "variant_id": "v0001",
+      "trace_id": "394724b33fe71594db37",
+      "family": "bandwidth",
+      "magnitude": 0.05,
+      "expected_pairs": 3,
+      "valid_pairs": 0,
+      "states": {
+        "pending": 3
+      },
+      "complete": false,
+      "score_from_median_throughputs": null,
+      "is_failure": null,
+      "run_score_stdev": null,
+      "run_score_range": null
+    },
+    {
+      "variant_id": "v0002",
+      "trace_id": "8d8a65c689d7717087b1",
+      "family": "bandwidth",
+      "magnitude": 0.05,
+      "expected_pairs": 3,
+      "valid_pairs": 0,
+      "states": {
+        "pending": 3
+      },
+      "complete": false,
+      "score_from_median_throughputs": null,
+      "is_failure": null,
+      "run_score_stdev": null,
+      "run_score_range": null
+    },
+    {
+      "variant_id": "v0003",
+      "trace_id": "ec62eb9467204e08cda8",
+      "family": "bandwidth",
+      "magnitude": 0.05,
+      "expected_pairs": 3,
+      "valid_pairs": 0,
+      "states": {
+        "pending": 3
+      },
+      "complete": false,
+      "score_from_median_throughputs": null,
+      "is_failure": null,
+      "run_score_stdev": null,
+      "run_score_range": null
+    },
+    {
+      "variant_id": "v0004",
+      "trace_id": "bfeabfbce5f0e6d08ad9",
+      "family": "bandwidth",
+      "magnitude": 0.05,
+      "expected_pairs": 3,
+      "valid_pairs": 0,
+      "states": {
+        "pending": 3
+      },
+      "complete": false,
+      "score_from_median_throughputs": null,
+      "is_failure": null,
+      "run_score_stdev": null,
+      "run_score_range": null
+    },
+    {
+      "variant_id": "v0005",
+      "trace_id": "c5f09f4b259b5bc28798",
+      "family": "bandwidth",
+      "magnitude": 0.05,
+      "expected_pairs": 3,
+      "valid_pairs": 0,
+      "states": {
+        "pending": 3
+      },
+      "complete": false,
+      "score_from_median_throughputs": null,
+      "is_failure": null,
+      "run_score_stdev": null,
+      "run_score_range": null
+    },
+    {
+      "variant_id": "v0006",
+      "trace_id": "bce85b262026164c7d6a",
+      "family": "bandwidth",
+      "magnitude": 0.1,
+      "expected_pairs": 3,
+      "valid_pairs": 0,
+      "states": {
+        "pending": 3
+      },
+      "complete": false,
+      "score_from_median_throughputs": null,
+      "is_failure": null,
+      "run_score_stdev": null,
+      "run_score_range": null
+    },
+    {
+      "variant_id": "v0007",
+      "trace_id": "d0c271e0806911737327",
+      "family": "bandwidth",
+      "magnitude": 0.1,
+      "expected_pairs": 3,
+      "valid_pairs": 0,
+      "states": {
+        "pending": 3
+      },
+      "complete": false,
+      "score_from_median_throughputs": null,
+      "is_failure": null,
+      "run_score_stdev": null,
+      "run_score_range": null
+    },
+    {
+      "variant_id": "v0008",
+      "trace_id": "3d56e051ee7b30cae225",
+      "family": "bandwidth",
+      "magnitude": 0.1,
+      "expected_pairs": 3,
+      "valid_pairs": 0,
+      "states": {
+        "pending": 3
+      },
+      "complete": false,
+      "score_from_median_throughputs": null,
+      "is_failure": null,
+      "run_score_stdev": null,
+      "run_score_range": null
+    },
+    {
+      "variant_id": "v0009",
+      "trace_id": "8bee2d4511f667969a72",
+      "family": "bandwidth",
+      "magnitude": 0.1,
+      "expected_pairs": 3,
+      "valid_pairs": 0,
+      "states": {
+        "pending": 3
+      },
+      "complete": false,
+      "score_from_median_throughputs": null,
+      "is_failure": null,
+      "run_score_stdev": null,
+      "run_score_range": null
+    },
+    {
+      "variant_id": "v0010",
+      "trace_id": "efbc5953b370f5467d88",
+      "family": "bandwidth",
+      "magnitude": 0.1,
+      "expected_pairs": 3,
+      "valid_pairs": 0,
+      "states": {
+        "pending": 3
+      },
+      "complete": false,
+      "score_from_median_throughputs": null,
+      "is_failure": null,
+      "run_score_stdev": null,
+      "run_score_range": null
+    },
+    {
+      "variant_id": "v0011",
+      "trace_id": "4d701072fa2ebc2c796a",
+      "family": "bandwidth",
+      "magnitude": 0.2,
+      "expected_pairs": 3,
+      "valid_pairs": 0,
+      "states": {
+        "pending": 3
+      },
+      "complete": false,
+      "score_from_median_throughputs": null,
+      "is_failure": null,
+      "run_score_stdev": null,
+      "run_score_range": null
+    },
+    {
+      "variant_id": "v0012",
+      "trace_id": "8943c3222384e53b79ae",
+      "family": "bandwidth",
+      "magnitude": 0.2,
+      "expected_pairs": 3,
+      "valid_pairs": 0,
+      "states": {
+        "pending": 3
+      },
+      "complete": false,
+      "score_from_median_throughputs": null,
+      "is_failure": null,
+      "run_score_stdev": null,
+      "run_score_range": null
+    },
+    {
+      "variant_id": "v0013",
+      "trace_id": "bc548fff02dde5f26e22",
+      "family": "bandwidth",
+      "magnitude": 0.2,
+      "expected_pairs": 3,
+      "valid_pairs": 0,
+      "states": {
+        "pending": 3
+      },
+      "complete": false,
+      "score_from_median_throughputs": null,
+      "is_failure": null,
+      "run_score_stdev": null,
+      "run_score_range": null
+    },
+    {
+      "variant_id": "v0014",
+      "trace_id": "8d8a65c689d7717087b1",
+      "family": "bandwidth",
+      "magnitude": 0.2,
+      "expected_pairs": 3,
+      "valid_pairs": 0,
+      "states": {
+        "pending": 3
+      },
+      "complete": false,
+      "score_from_median_throughputs": null,
+      "is_failure": null,
+      "run_score_stdev": null,
+      "run_score_range": null
+    },
+    {
+      "variant_id": "v0015",
+      "trace_id": "40c6e2ec04ec50fdf9ad",
+      "family": "bandwidth",
+      "magnitude": 0.2,
+      "expected_pairs": 3,
+      "valid_pairs": 0,
+      "states": {
+        "pending": 3
+      },
+      "complete": false,
+      "score_from_median_throughputs": null,
+      "is_failure": null,
+      "run_score_stdev": null,
+      "run_score_range": null
+    },
+    {
+      "variant_id": "v0016",
+      "trace_id": "3df68658f14ca3931fa8",
+      "family": "delay",
+      "magnitude": 0.05,
+      "expected_pairs": 3,
+      "valid_pairs": 0,
+      "states": {
+        "pending": 3
+      },
+      "complete": false,
+      "score_from_median_throughputs": null,
+      "is_failure": null,
+      "run_score_stdev": null,
+      "run_score_range": null
+    },
+    {
+      "variant_id": "v0017",
+      "trace_id": "38119a2d6d7e0d28e067",
+      "family": "delay",
+      "magnitude": 0.05,
+      "expected_pairs": 3,
+      "valid_pairs": 0,
+      "states": {
+        "pending": 3
+      },
+      "complete": false,
+      "score_from_median_throughputs": null,
+      "is_failure": null,
+      "run_score_stdev": null,
+      "run_score_range": null
+    },
+    {
+      "variant_id": "v0018",
+      "trace_id": "2156044d3c5deb69dde9",
+      "family": "delay",
+      "magnitude": 0.05,
+      "expected_pairs": 3,
+      "valid_pairs": 0,
+      "states": {
+        "pending": 3
+      },
+      "complete": false,
+      "score_from_median_throughputs": null,
+      "is_failure": null,
+      "run_score_stdev": null,
+      "run_score_range": null
+    },
+    {
+      "variant_id": "v0019",
+      "trace_id": "f0a28f330c95e00d0138",
+      "family": "delay",
+      "magnitude": 0.05,
+      "expected_pairs": 3,
+      "valid_pairs": 0,
+      "states": {
+        "pending": 3
+      },
+      "complete": false,
+      "score_from_median_throughputs": null,
+      "is_failure": null,
+      "run_score_stdev": null,
+      "run_score_range": null
+    },
+    {
+      "variant_id": "v0020",
+      "trace_id": "3929b9c1025229dce81f",
+      "family": "delay",
+      "magnitude": 0.05,
+      "expected_pairs": 3,
+      "valid_pairs": 0,
+      "states": {
+        "pending": 3
+      },
+      "complete": false,
+      "score_from_median_throughputs": null,
+      "is_failure": null,
+      "run_score_stdev": null,
+      "run_score_range": null
+    },
+    {
+      "variant_id": "v0021",
+      "trace_id": "d634a9e0ba81ee84917a",
+      "family": "delay",
+      "magnitude": 0.1,
+      "expected_pairs": 3,
+      "valid_pairs": 0,
+      "states": {
+        "pending": 3
+      },
+      "complete": false,
+      "score_from_median_throughputs": null,
+      "is_failure": null,
+      "run_score_stdev": null,
+      "run_score_range": null
+    },
+    {
+      "variant_id": "v0022",
+      "trace_id": "3df68658f14ca3931fa8",
+      "family": "delay",
+      "magnitude": 0.1,
+      "expected_pairs": 3,
+      "valid_pairs": 0,
+      "states": {
+        "pending": 3
+      },
+      "complete": false,
+      "score_from_median_throughputs": null,
+      "is_failure": null,
+      "run_score_stdev": null,
+      "run_score_range": null
+    },
+    {
+      "variant_id": "v0023",
+      "trace_id": "6b2b176ab89b7e9c12a7",
+      "family": "delay",
+      "magnitude": 0.1,
+      "expected_pairs": 3,
+      "valid_pairs": 0,
+      "states": {
+        "pending": 3
+      },
+      "complete": false,
+      "score_from_median_throughputs": null,
+      "is_failure": null,
+      "run_score_stdev": null,
+      "run_score_range": null
+    },
+    {
+      "variant_id": "v0024",
+      "trace_id": "f0a28f330c95e00d0138",
+      "family": "delay",
+      "magnitude": 0.1,
+      "expected_pairs": 3,
+      "valid_pairs": 0,
+      "states": {
+        "pending": 3
+      },
+      "complete": false,
+      "score_from_median_throughputs": null,
+      "is_failure": null,
+      "run_score_stdev": null,
+      "run_score_range": null
+    },
+    {
+      "variant_id": "v0025",
+      "trace_id": "29ad47d95da046358162",
+      "family": "delay",
+      "magnitude": 0.1,
+      "expected_pairs": 3,
+      "valid_pairs": 0,
+      "states": {
+        "pending": 3
+      },
+      "complete": false,
+      "score_from_median_throughputs": null,
+      "is_failure": null,
+      "run_score_stdev": null,
+      "run_score_range": null
+    },
+    {
+      "variant_id": "v0026",
+      "trace_id": "030bb122096ae220830e",
+      "family": "delay",
+      "magnitude": 0.2,
+      "expected_pairs": 3,
+      "valid_pairs": 0,
+      "states": {
+        "pending": 3
+      },
+      "complete": false,
+      "score_from_median_throughputs": null,
+      "is_failure": null,
+      "run_score_stdev": null,
+      "run_score_range": null
+    },
+    {
+      "variant_id": "v0027",
+      "trace_id": "286d6503068ed2d542c5",
+      "family": "delay",
+      "magnitude": 0.2,
+      "expected_pairs": 3,
+      "valid_pairs": 0,
+      "states": {
+        "pending": 3
+      },
+      "complete": false,
+      "score_from_median_throughputs": null,
+      "is_failure": null,
+      "run_score_stdev": null,
+      "run_score_range": null
+    },
+    {
+      "variant_id": "v0028",
+      "trace_id": "d467895ff7a1f42713a0",
+      "family": "delay",
+      "magnitude": 0.2,
+      "expected_pairs": 3,
+      "valid_pairs": 0,
+      "states": {
+        "pending": 3
+      },
+      "complete": false,
+      "score_from_median_throughputs": null,
+      "is_failure": null,
+      "run_score_stdev": null,
+      "run_score_range": null
+    },
+    {
+      "variant_id": "v0029",
+      "trace_id": "eb58f8ab148c1d02f3d6",
+      "family": "delay",
+      "magnitude": 0.2,
+      "expected_pairs": 3,
+      "valid_pairs": 0,
+      "states": {
+        "pending": 3
+      },
+      "complete": false,
+      "score_from_median_throughputs": null,
+      "is_failure": null,
+      "run_score_stdev": null,
+      "run_score_range": null
+    },
+    {
+      "variant_id": "v0030",
+      "trace_id": "f39509153dd16d502fe2",
+      "family": "delay",
+      "magnitude": 0.2,
+      "expected_pairs": 3,
+      "valid_pairs": 0,
+      "states": {
+        "pending": 3
+      },
+      "complete": false,
+      "score_from_median_throughputs": null,
+      "is_failure": null,
+      "run_score_stdev": null,
+      "run_score_range": null
+    },
+    {
+      "variant_id": "v0031",
+      "trace_id": "4c9c43e307942b180f5c",
+      "family": "timing",
+      "magnitude": 0.05,
+      "expected_pairs": 3,
+      "valid_pairs": 0,
+      "states": {
+        "pending": 3
+      },
+      "complete": false,
+      "score_from_median_throughputs": null,
+      "is_failure": null,
+      "run_score_stdev": null,
+      "run_score_range": null
+    },
+    {
+      "variant_id": "v0032",
+      "trace_id": "1c00e8f2de878c451fa0",
+      "family": "timing",
+      "magnitude": 0.05,
+      "expected_pairs": 3,
+      "valid_pairs": 0,
+      "states": {
+        "pending": 3
+      },
+      "complete": false,
+      "score_from_median_throughputs": null,
+      "is_failure": null,
+      "run_score_stdev": null,
+      "run_score_range": null
+    },
+    {
+      "variant_id": "v0033",
+      "trace_id": "dad20b7aa53655f82cda",
+      "family": "timing",
+      "magnitude": 0.05,
+      "expected_pairs": 3,
+      "valid_pairs": 0,
+      "states": {
+        "pending": 3
+      },
+      "complete": false,
+      "score_from_median_throughputs": null,
+      "is_failure": null,
+      "run_score_stdev": null,
+      "run_score_range": null
+    },
+    {
+      "variant_id": "v0034",
+      "trace_id": "4a99fe91cf7823cf9d54",
+      "family": "timing",
+      "magnitude": 0.05,
+      "expected_pairs": 3,
+      "valid_pairs": 0,
+      "states": {
+        "pending": 3
+      },
+      "complete": false,
+      "score_from_median_throughputs": null,
+      "is_failure": null,
+      "run_score_stdev": null,
+      "run_score_range": null
+    },
+    {
+      "variant_id": "v0035",
+      "trace_id": "bf31ae72dce41b6e2fad",
+      "family": "timing",
+      "magnitude": 0.05,
+      "expected_pairs": 3,
+      "valid_pairs": 0,
+      "states": {
+        "pending": 3
+      },
+      "complete": false,
+      "score_from_median_throughputs": null,
+      "is_failure": null,
+      "run_score_stdev": null,
+      "run_score_range": null
+    },
+    {
+      "variant_id": "v0036",
+      "trace_id": "ceeed007db97b57d6fb6",
+      "family": "timing",
+      "magnitude": 0.1,
+      "expected_pairs": 3,
+      "valid_pairs": 0,
+      "states": {
+        "pending": 3
+      },
+      "complete": false,
+      "score_from_median_throughputs": null,
+      "is_failure": null,
+      "run_score_stdev": null,
+      "run_score_range": null
+    },
+    {
+      "variant_id": "v0037",
+      "trace_id": "8023e5f6bbb6436d4257",
+      "family": "timing",
+      "magnitude": 0.1,
+      "expected_pairs": 3,
+      "valid_pairs": 0,
+      "states": {
+        "pending": 3
+      },
+      "complete": false,
+      "score_from_median_throughputs": null,
+      "is_failure": null,
+      "run_score_stdev": null,
+      "run_score_range": null
+    },
+    {
+      "variant_id": "v0038",
+      "trace_id": "611c8fc4ae34a1ea3bdc",
+      "family": "timing",
+      "magnitude": 0.1,
+      "expected_pairs": 3,
+      "valid_pairs": 0,
+      "states": {
+        "pending": 3
+      },
+      "complete": false,
+      "score_from_median_throughputs": null,
+      "is_failure": null,
+      "run_score_stdev": null,
+      "run_score_range": null
+    },
+    {
+      "variant_id": "v0039",
+      "trace_id": "e13cfa29fe3b89f96b25",
+      "family": "timing",
+      "magnitude": 0.1,
+      "expected_pairs": 3,
+      "valid_pairs": 0,
+      "states": {
+        "pending": 3
+      },
+      "complete": false,
+      "score_from_median_throughputs": null,
+      "is_failure": null,
+      "run_score_stdev": null,
+      "run_score_range": null
+    },
+    {
+      "variant_id": "v0040",
+      "trace_id": "893384f100223ed93fcb",
+      "family": "timing",
+      "magnitude": 0.1,
+      "expected_pairs": 3,
+      "valid_pairs": 0,
+      "states": {
+        "pending": 3
+      },
+      "complete": false,
+      "score_from_median_throughputs": null,
+      "is_failure": null,
+      "run_score_stdev": null,
+      "run_score_range": null
+    },
+    {
+      "variant_id": "v0041",
+      "trace_id": "47a2ce5008aed8a0f381",
+      "family": "timing",
+      "magnitude": 0.2,
+      "expected_pairs": 3,
+      "valid_pairs": 0,
+      "states": {
+        "pending": 3
+      },
+      "complete": false,
+      "score_from_median_throughputs": null,
+      "is_failure": null,
+      "run_score_stdev": null,
+      "run_score_range": null
+    },
+    {
+      "variant_id": "v0042",
+      "trace_id": "60f8dcdcaa12c69d63c0",
+      "family": "timing",
+      "magnitude": 0.2,
+      "expected_pairs": 3,
+      "valid_pairs": 0,
+      "states": {
+        "pending": 3
+      },
+      "complete": false,
+      "score_from_median_throughputs": null,
+      "is_failure": null,
+      "run_score_stdev": null,
+      "run_score_range": null
+    },
+    {
+      "variant_id": "v0043",
+      "trace_id": "ffb918b881d7c10ccc99",
+      "family": "timing",
+      "magnitude": 0.2,
+      "expected_pairs": 3,
+      "valid_pairs": 0,
+      "states": {
+        "pending": 3
+      },
+      "complete": false,
+      "score_from_median_throughputs": null,
+      "is_failure": null,
+      "run_score_stdev": null,
+      "run_score_range": null
+    },
+    {
+      "variant_id": "v0044",
+      "trace_id": "81a7f28f796f420afd17",
+      "family": "timing",
+      "magnitude": 0.2,
+      "expected_pairs": 3,
+      "valid_pairs": 0,
+      "states": {
+        "pending": 3
+      },
+      "complete": false,
+      "score_from_median_throughputs": null,
+      "is_failure": null,
+      "run_score_stdev": null,
+      "run_score_range": null
+    },
+    {
+      "variant_id": "v0045",
+      "trace_id": "9d89ea59c3be33c0b2bb",
+      "family": "timing",
+      "magnitude": 0.2,
+      "expected_pairs": 3,
+      "valid_pairs": 0,
+      "states": {
+        "pending": 3
+      },
+      "complete": false,
+      "score_from_median_throughputs": null,
+      "is_failure": null,
+      "run_score_stdev": null,
+      "run_score_range": null
+    }
+  ],
+  "budget": {
+    "planned_pair_runs": 140,
+    "minimum_protocol_executions": 280,
+    "rows_present": 140,
+    "rows_missing": 0,
+    "protocol_executions_reported": 0,
+    "sum_pair_wall_time_s": 0.0
+  },
+  "interpretation": "Descriptive local results only; not real-world failure probabilities or confidence intervals."
+}

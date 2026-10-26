@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "description": "Synthetic pipeline fixture, not an AdvNet counterexample",
+  "queue_packets": 100,
+  "segments": [
+    {
+      "bandwidth_kbps": 19000,
+      "delay_ms": 40,
+      "duration_ms": 10000
+    },
+    {
+      "bandwidth_kbps": 5000,
+      "delay_ms": 80,
+      "duration_ms": 10000
+    },
+    {
+      "bandwidth_kbps": 20000,
+      "delay_ms": 40,
+      "duration_ms": 10000
+    }
+  ]
+}

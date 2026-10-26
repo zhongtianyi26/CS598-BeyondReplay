@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "status": "draft_pending_member_b",
+  "source_revision": "6390c47f9387857d3cee036ee3be2c01848ab8cf",
+  "target": "bbr",
+  "reference": "cubic",
+  "codec": "pair_678",
+  "score_scheme": "throughput_symmedian_v1",
+  "failure_threshold": 0.2,
+  "seed": 598,
+  "samples_per_cell": 1,
+  "baseline_repeats": 5,
+  "variant_repeats": 3,
+  "magnitudes": [
+    0.1
+  ],
+  "bounds": {
+    "bandwidth_kbps": [
+      500,
+      150000
+    ],
+    "delay_ms": [
+      1,
+      200
+    ],
+    "duration_ms": [
+      50,
+      60000
+    ],
+    "queue_packets": [
+      10,
+      10000
+    ]
+  },
+  "steps": {
+    "bandwidth_kbps": 500,
+    "delay_ms": 1,
+    "duration_ms": 50
+  }
+}

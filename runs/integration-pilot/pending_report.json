@@ -1,0 +1,139 @@
+{
+  "schema_version": 1,
+  "config_status": "draft_pending_member_b",
+  "score_scheme": "throughput_symmedian_v1",
+  "failure_threshold": 0.2,
+  "failure_rule": "score > threshold",
+  "baseline": {
+    "variant_id": "baseline",
+    "trace_id": "0eec24a5955a89167d9a",
+    "family": "baseline",
+    "magnitude": 0,
+    "expected_pairs": 5,
+    "valid_pairs": 0,
+    "states": {
+      "pending": 5
+    },
+    "complete": false,
+    "score_from_median_throughputs": null,
+    "is_failure": null,
+    "run_score_stdev": null,
+    "run_score_range": null
+  },
+  "cells": [
+    {
+      "family": "bandwidth",
+      "magnitude": 0.1,
+      "requested": 1,
+      "generated": 1,
+      "attempts": 1,
+      "shortfall": 0,
+      "complete_variants": 0,
+      "incomplete_variants": 1,
+      "failure_fraction_of_complete_variants": null,
+      "retention_rate": null,
+      "retention_reason": "baseline_not_confirmed_failure"
+    },
+    {
+      "family": "delay",
+      "magnitude": 0.1,
+      "requested": 1,
+      "generated": 1,
+      "attempts": 1,
+      "shortfall": 0,
+      "complete_variants": 0,
+      "incomplete_variants": 1,
+      "failure_fraction_of_complete_variants": null,
+      "retention_rate": null,
+      "retention_reason": "baseline_not_confirmed_failure"
+    },
+    {
+      "family": "timing",
+      "magnitude": 0.1,
+      "requested": 1,
+      "generated": 1,
+      "attempts": 1,
+      "shortfall": 0,
+      "complete_variants": 0,
+      "incomplete_variants": 1,
+      "failure_fraction_of_complete_variants": null,
+      "retention_rate": null,
+      "retention_reason": "baseline_not_confirmed_failure"
+    }
+  ],
+  "variants": [
+    {
+      "variant_id": "baseline",
+      "trace_id": "0eec24a5955a89167d9a",
+      "family": "baseline",
+      "magnitude": 0,
+      "expected_pairs": 5,
+      "valid_pairs": 0,
+      "states": {
+        "pending": 5
+      },
+      "complete": false,
+      "score_from_median_throughputs": null,
+      "is_failure": null,
+      "run_score_stdev": null,
+      "run_score_range": null
+    },
+    {
+      "variant_id": "v0001",
+      "trace_id": "8bee2d4511f667969a72",
+      "family": "bandwidth",
+      "magnitude": 0.1,
+      "expected_pairs": 3,
+      "valid_pairs": 0,
+      "states": {
+        "pending": 3
+      },
+      "complete": false,
+      "score_from_median_throughputs": null,
+      "is_failure": null,
+      "run_score_stdev": null,
+      "run_score_range": null
+    },
+    {
+      "variant_id": "v0002",
+      "trace_id": "4c70a8e166284a29b8f2",
+      "family": "delay",
+      "magnitude": 0.1,
+      "expected_pairs": 3,
+      "valid_pairs": 0,
+      "states": {
+        "pending": 3
+      },
+      "complete": false,
+      "score_from_median_throughputs": null,
+      "is_failure": null,
+      "run_score_stdev": null,
+      "run_score_range": null
+    },
+    {
+      "variant_id": "v0003",
+      "trace_id": "86bf5ee3b1e07381e433",
+      "family": "timing",
+      "magnitude": 0.1,
+      "expected_pairs": 3,
+      "valid_pairs": 0,
+      "states": {
+        "pending": 3
+      },
+      "complete": false,
+      "score_from_median_throughputs": null,
+      "is_failure": null,
+      "run_score_stdev": null,
+      "run_score_range": null
+    }
+  ],
+  "budget": {
+    "planned_pair_runs": 14,
+    "minimum_protocol_executions": 28,
+    "rows_present": 14,
+    "rows_missing": 0,
+    "protocol_executions_reported": 0,
+    "sum_pair_wall_time_s": 0.0
+  },
+  "interpretation": "Descriptive local results only; not real-world failure probabilities or confidence intervals."
+}

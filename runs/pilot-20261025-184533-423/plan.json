@@ -1,0 +1,3597 @@
+{
+  "schema_version": 1,
+  "config": {
+    "schema_version": 1,
+    "status": "draft_pending_member_b",
+    "source_revision": "6390c47f9387857d3cee036ee3be2c01848ab8cf",
+    "target": "bbr",
+    "reference": "cubic",
+    "codec": "pair_678",
+    "score_scheme": "throughput_symmedian_v1",
+    "failure_threshold": 0.2,
+    "seed": 598,
+    "samples_per_cell": 5,
+    "baseline_repeats": 5,
+    "variant_repeats": 3,
+    "magnitudes": [
+      0.05,
+      0.1,
+      0.2
+    ],
+    "bounds": {
+      "bandwidth_kbps": [
+        500,
+        150000
+      ],
+      "delay_ms": [
+        1,
+        200
+      ],
+      "duration_ms": [
+        50,
+        60000
+      ],
+      "queue_packets": [
+        10,
+        10000
+      ]
+    },
+    "steps": {
+      "bandwidth_kbps": 500,
+      "delay_ms": 1,
+      "duration_ms": 50
+    }
+  },
+  "parent_trace_id": "0eec24a5955a89167d9a",
+  "trace_description": "Synthetic pipeline fixture, not an AdvNet counterexample",
+  "cells": [
+    {
+      "family": "bandwidth",
+      "magnitude": 0.05,
+      "requested": 5,
+      "generated": 5,
+      "attempts": 13,
+      "shortfall": 0
+    },
+    {
+      "family": "bandwidth",
+      "magnitude": 0.1,
+      "requested": 5,
+      "generated": 5,
+      "attempts": 5,
+      "shortfall": 0
+    },
+    {
+      "family": "bandwidth",
+      "magnitude": 0.2,
+      "requested": 5,
+      "generated": 5,
+      "attempts": 5,
+      "shortfall": 0
+    },
+    {
+      "family": "delay",
+      "magnitude": 0.05,
+      "requested": 5,
+      "generated": 5,
+      "attempts": 7,
+      "shortfall": 0
+    },
+    {
+      "family": "delay",
+      "magnitude": 0.1,
+      "requested": 5,
+      "generated": 5,
+      "attempts": 5,
+      "shortfall": 0
+    },
+    {
+      "family": "delay",
+      "magnitude": 0.2,
+      "requested": 5,
+      "generated": 5,
+      "attempts": 5,
+      "shortfall": 0
+    },
+    {
+      "family": "timing",
+      "magnitude": 0.05,
+      "requested": 5,
+      "generated": 5,
+      "attempts": 5,
+      "shortfall": 0
+    },
+    {
+      "family": "timing",
+      "magnitude": 0.1,
+      "requested": 5,
+      "generated": 5,
+      "attempts": 5,
+      "shortfall": 0
+    },
+    {
+      "family": "timing",
+      "magnitude": 0.2,
+      "requested": 5,
+      "generated": 5,
+      "attempts": 5,
+      "shortfall": 0
+    }
+  ],
+  "variants": [
+    {
+      "variant_id": "baseline",
+      "trace_id": "0eec24a5955a89167d9a",
+      "parent_trace_id": "0eec24a5955a89167d9a",
+      "family": "baseline",
+      "magnitude": 0,
+      "trace": {
+        "schema_version": 1,
+        "description": "Synthetic pipeline fixture, not an AdvNet counterexample",
+        "queue_packets": 100,
+        "segments": [
+          {
+            "bandwidth_kbps": 20000,
+            "delay_ms": 40,
+            "duration_ms": 10000
+          },
+          {
+            "bandwidth_kbps": 5000,
+            "delay_ms": 80,
+            "duration_ms": 10000
+          },
+          {
+            "bandwidth_kbps": 20000,
+            "delay_ms": 40,
+            "duration_ms": 10000
+          }
+        ]
+      },
+      "encoded_trace": [
+        40,
+        10,
+        40,
+        40,
+        80,
+        40,
+        200,
+        200,
+        200,
+        10
+      ],
+      "perturbation": null
+    },
+    {
+      "variant_id": "v0001",
+      "trace_id": "394724b33fe71594db37",
+      "parent_trace_id": "0eec24a5955a89167d9a",
+      "family": "bandwidth",
+      "magnitude": 0.05,
+      "trace": {
+        "schema_version": 1,
+        "description": "Synthetic pipeline fixture, not an AdvNet counterexample",
+        "queue_packets": 100,
+        "segments": [
+          {
+            "bandwidth_kbps": 19000,
+            "delay_ms": 40,
+            "duration_ms": 10000
+          },
+          {
+            "bandwidth_kbps": 5000,
+            "delay_ms": 80,
+            "duration_ms": 10000
+          },
+          {
+            "bandwidth_kbps": 20000,
+            "delay_ms": 40,
+            "duration_ms": 10000
+          }
+        ]
+      },
+      "encoded_trace": [
+        38,
+        10,
+        40,
+        40,
+        80,
+        40,
+        200,
+        200,
+        200,
+        10
+      ],
+      "perturbation": {
+        "coordinate_index": 0,
+        "delta": -1000,
+        "delta_unit": "kbps",
+        "relative_to": 20000,
+        "actual_relative_change": -0.05
+      }
+    },
+    {
+      "variant_id": "v0002",
+      "trace_id": "8d8a65c689d7717087b1",
+      "parent_trace_id": "0eec24a5955a89167d9a",
+      "family": "bandwidth",
+      "magnitude": 0.05,
+      "trace": {
+        "schema_version": 1,
+        "description": "Synthetic pipeline fixture, not an AdvNet counterexample",
+        "queue_packets": 100,
+        "segments": [
+          {
+            "bandwidth_kbps": 21000,
+            "delay_ms": 40,
+            "duration_ms": 10000
+          },
+          {
+            "bandwidth_kbps": 5000,
+            "delay_ms": 80,
+            "duration_ms": 10000
+          },
+          {
+            "bandwidth_kbps": 20000,
+            "delay_ms": 40,
+            "duration_ms": 10000
+          }
+        ]
+      },
+      "encoded_trace": [
+        42,
+        10,
+        40,
+        40,
+        80,
+        40,
+        200,
+        200,
+        200,
+        10
+      ],
+      "perturbation": {
+        "coordinate_index": 0,
+        "delta": 1000,
+        "delta_unit": "kbps",
+        "relative_to": 20000,
+        "actual_relative_change": 0.05
+      }
+    },
+    {
+      "variant_id": "v0003",
+      "trace_id": "ec62eb9467204e08cda8",
+      "parent_trace_id": "0eec24a5955a89167d9a",
+      "family": "bandwidth",
+      "magnitude": 0.05,
+      "trace": {
+        "schema_version": 1,
+        "description": "Synthetic pipeline fixture, not an AdvNet counterexample",
+        "queue_packets": 100,
+        "segments": [
+          {
+            "bandwidth_kbps": 20000,
+            "delay_ms": 40,
+            "duration_ms": 10000
+          },
+          {
+            "bandwidth_kbps": 5000,
+            "delay_ms": 80,
+            "duration_ms": 10000
+          },
+          {
+            "bandwidth_kbps": 19500,
+            "delay_ms": 40,
+            "duration_ms": 10000
+          }
+        ]
+      },
+      "encoded_trace": [
+        40,
+        10,
+        39,
+        40,
+        80,
+        40,
+        200,
+        200,
+        200,
+        10
+      ],
+      "perturbation": {
+        "coordinate_index": 2,
+        "delta": -500,
+        "delta_unit": "kbps",
+        "relative_to": 20000,
+        "actual_relative_change": -0.025
+      }
+    },
+    {
+      "variant_id": "v0004",
+      "trace_id": "bfeabfbce5f0e6d08ad9",
+      "parent_trace_id": "0eec24a5955a89167d9a",
+      "family": "bandwidth",
+      "magnitude": 0.05,
+      "trace": {
+        "schema_version": 1,
+        "description": "Synthetic pipeline fixture, not an AdvNet counterexample",
+        "queue_packets": 100,
+        "segments": [
+          {
+            "bandwidth_kbps": 19500,
+            "delay_ms": 40,
+            "duration_ms": 10000
+          },
+          {
+            "bandwidth_kbps": 5000,
+            "delay_ms": 80,
+            "duration_ms": 10000
+          },
+          {
+            "bandwidth_kbps": 20000,
+            "delay_ms": 40,
+            "duration_ms": 10000
+          }
+        ]
+      },
+      "encoded_trace": [
+        39,
+        10,
+        40,
+        40,
+        80,
+        40,
+        200,
+        200,
+        200,
+        10
+      ],
+      "perturbation": {
+        "coordinate_index": 0,
+        "delta": -500,
+        "delta_unit": "kbps",
+        "relative_to": 20000,
+        "actual_relative_change": -0.025
+      }
+    },
+    {
+      "variant_id": "v0005",
+      "trace_id": "c5f09f4b259b5bc28798",
+      "parent_trace_id": "0eec24a5955a89167d9a",
+      "family": "bandwidth",
+      "magnitude": 0.05,
+      "trace": {
+        "schema_version": 1,
+        "description": "Synthetic pipeline fixture, not an AdvNet counterexample",
+        "queue_packets": 100,
+        "segments": [
+          {
+            "bandwidth_kbps": 20500,
+            "delay_ms": 40,
+            "duration_ms": 10000
+          },
+          {
+            "bandwidth_kbps": 5000,
+            "delay_ms": 80,
+            "duration_ms": 10000
+          },
+          {
+            "bandwidth_kbps": 20000,
+            "delay_ms": 40,
+            "duration_ms": 10000
+          }
+        ]
+      },
+      "encoded_trace": [
+        41,
+        10,
+        40,
+        40,
+        80,
+        40,
+        200,
+        200,
+        200,
+        10
+      ],
+      "perturbation": {
+        "coordinate_index": 0,
+        "delta": 500,
+        "delta_unit": "kbps",
+        "relative_to": 20000,
+        "actual_relative_change": 0.025
+      }
+    },
+    {
+      "variant_id": "v0006",
+      "trace_id": "bce85b262026164c7d6a",
+      "parent_trace_id": "0eec24a5955a89167d9a",
+      "family": "bandwidth",
+      "magnitude": 0.1,
+      "trace": {
+        "schema_version": 1,
+        "description": "Synthetic pipeline fixture, not an AdvNet counterexample",
+        "queue_packets": 100,
+        "segments": [
+          {
+            "bandwidth_kbps": 20000,
+            "delay_ms": 40,
+            "duration_ms": 10000
+          },
+          {
+            "bandwidth_kbps": 5000,
+            "delay_ms": 80,
+            "duration_ms": 10000
+          },
+          {
+            "bandwidth_kbps": 21500,
+            "delay_ms": 40,
+            "duration_ms": 10000
+          }
+        ]
+      },
+      "encoded_trace": [
+        40,
+        10,
+        43,
+        40,
+        80,
+        40,
+        200,
+        200,
+        200,
+        10
+      ],
+      "perturbation": {
+        "coordinate_index": 2,
+        "delta": 1500,
+        "delta_unit": "kbps",
+        "relative_to": 20000,
+        "actual_relative_change": 0.075
+      }
+    },
+    {
+      "variant_id": "v0007",
+      "trace_id": "d0c271e0806911737327",
+      "parent_trace_id": "0eec24a5955a89167d9a",
+      "family": "bandwidth",
+      "magnitude": 0.1,
+      "trace": {
+        "schema_version": 1,
+        "description": "Synthetic pipeline fixture, not an AdvNet counterexample",
+        "queue_packets": 100,
+        "segments": [
+          {
+            "bandwidth_kbps": 18500,
+            "delay_ms": 40,
+            "duration_ms": 10000
+          },
+          {
+            "bandwidth_kbps": 5000,
+            "delay_ms": 80,
+            "duration_ms": 10000
+          },
+          {
+            "bandwidth_kbps": 20000,
+            "delay_ms": 40,
+            "duration_ms": 10000
+          }
+        ]
+      },
+      "encoded_trace": [
+        37,
+        10,
+        40,
+        40,
+        80,
+        40,
+        200,
+        200,
+        200,
+        10
+      ],
+      "perturbation": {
+        "coordinate_index": 0,
+        "delta": -1500,
+        "delta_unit": "kbps",
+        "relative_to": 20000,
+        "actual_relative_change": -0.075
+      }
+    },
+    {
+      "variant_id": "v0008",
+      "trace_id": "3d56e051ee7b30cae225",
+      "parent_trace_id": "0eec24a5955a89167d9a",
+      "family": "bandwidth",
+      "magnitude": 0.1,
+      "trace": {
+        "schema_version": 1,
+        "description": "Synthetic pipeline fixture, not an AdvNet counterexample",
+        "queue_packets": 100,
+        "segments": [
+          {
+            "bandwidth_kbps": 20000,
+            "delay_ms": 40,
+            "duration_ms": 10000
+          },
+          {
+            "bandwidth_kbps": 5000,
+            "delay_ms": 80,
+            "duration_ms": 10000
+          },
+          {
+            "bandwidth_kbps": 19000,
+            "delay_ms": 40,
+            "duration_ms": 10000
+          }
+        ]
+      },
+      "encoded_trace": [
+        40,
+        10,
+        38,
+        40,
+        80,
+        40,
+        200,
+        200,
+        200,
+        10
+      ],
+      "perturbation": {
+        "coordinate_index": 2,
+        "delta": -1000,
+        "delta_unit": "kbps",
+        "relative_to": 20000,
+        "actual_relative_change": -0.05
+      }
+    },
+    {
+      "variant_id": "v0009",
+      "trace_id": "8bee2d4511f667969a72",
+      "parent_trace_id": "0eec24a5955a89167d9a",
+      "family": "bandwidth",
+      "magnitude": 0.1,
+      "trace": {
+        "schema_version": 1,
+        "description": "Synthetic pipeline fixture, not an AdvNet counterexample",
+        "queue_packets": 100,
+        "segments": [
+          {
+            "bandwidth_kbps": 18000,
+            "delay_ms": 40,
+            "duration_ms": 10000
+          },
+          {
+            "bandwidth_kbps": 5000,
+            "delay_ms": 80,
+            "duration_ms": 10000
+          },
+          {
+            "bandwidth_kbps": 20000,
+            "delay_ms": 40,
+            "duration_ms": 10000
+          }
+        ]
+      },
+      "encoded_trace": [
+        36,
+        10,
+        40,
+        40,
+        80,
+        40,
+        200,
+        200,
+        200,
+        10
+      ],
+      "perturbation": {
+        "coordinate_index": 0,
+        "delta": -2000,
+        "delta_unit": "kbps",
+        "relative_to": 20000,
+        "actual_relative_change": -0.1
+      }
+    },
+    {
+      "variant_id": "v0010",
+      "trace_id": "efbc5953b370f5467d88",
+      "parent_trace_id": "0eec24a5955a89167d9a",
+      "family": "bandwidth",
+      "magnitude": 0.1,
+      "trace": {
+        "schema_version": 1,
+        "description": "Synthetic pipeline fixture, not an AdvNet counterexample",
+        "queue_packets": 100,
+        "segments": [
+          {
+            "bandwidth_kbps": 20000,
+            "delay_ms": 40,
+            "duration_ms": 10000
+          },
+          {
+            "bandwidth_kbps": 5000,
+            "delay_ms": 80,
+            "duration_ms": 10000
+          },
+          {
+            "bandwidth_kbps": 20500,
+            "delay_ms": 40,
+            "duration_ms": 10000
+          }
+        ]
+      },
+      "encoded_trace": [
+        40,
+        10,
+        41,
+        40,
+        80,
+        40,
+        200,
+        200,
+        200,
+        10
+      ],
+      "perturbation": {
+        "coordinate_index": 2,
+        "delta": 500,
+        "delta_unit": "kbps",
+        "relative_to": 20000,
+        "actual_relative_change": 0.025
+      }
+    },
+    {
+      "variant_id": "v0011",
+      "trace_id": "4d701072fa2ebc2c796a",
+      "parent_trace_id": "0eec24a5955a89167d9a",
+      "family": "bandwidth",
+      "magnitude": 0.2,
+      "trace": {
+        "schema_version": 1,
+        "description": "Synthetic pipeline fixture, not an AdvNet counterexample",
+        "queue_packets": 100,
+        "segments": [
+          {
+            "bandwidth_kbps": 20000,
+            "delay_ms": 40,
+            "duration_ms": 10000
+          },
+          {
+            "bandwidth_kbps": 5000,
+            "delay_ms": 80,
+            "duration_ms": 10000
+          },
+          {
+            "bandwidth_kbps": 18500,
+            "delay_ms": 40,
+            "duration_ms": 10000
+          }
+        ]
+      },
+      "encoded_trace": [
+        40,
+        10,
+        37,
+        40,
+        80,
+        40,
+        200,
+        200,
+        200,
+        10
+      ],
+      "perturbation": {
+        "coordinate_index": 2,
+        "delta": -1500,
+        "delta_unit": "kbps",
+        "relative_to": 20000,
+        "actual_relative_change": -0.075
+      }
+    },
+    {
+      "variant_id": "v0012",
+      "trace_id": "8943c3222384e53b79ae",
+      "parent_trace_id": "0eec24a5955a89167d9a",
+      "family": "bandwidth",
+      "magnitude": 0.2,
+      "trace": {
+        "schema_version": 1,
+        "description": "Synthetic pipeline fixture, not an AdvNet counterexample",
+        "queue_packets": 100,
+        "segments": [
+          {
+            "bandwidth_kbps": 20000,
+            "delay_ms": 40,
+            "duration_ms": 10000
+          },
+          {
+            "bandwidth_kbps": 5000,
+            "delay_ms": 80,
+            "duration_ms": 10000
+          },
+          {
+            "bandwidth_kbps": 16000,
+            "delay_ms": 40,
+            "duration_ms": 10000
+          }
+        ]
+      },
+      "encoded_trace": [
+        40,
+        10,
+        32,
+        40,
+        80,
+        40,
+        200,
+        200,
+        200,
+        10
+      ],
+      "perturbation": {
+        "coordinate_index": 2,
+        "delta": -4000,
+        "delta_unit": "kbps",
+        "relative_to": 20000,
+        "actual_relative_change": -0.2
+      }
+    },
+    {
+      "variant_id": "v0013",
+      "trace_id": "bc548fff02dde5f26e22",
+      "parent_trace_id": "0eec24a5955a89167d9a",
+      "family": "bandwidth",
+      "magnitude": 0.2,
+      "trace": {
+        "schema_version": 1,
+        "description": "Synthetic pipeline fixture, not an AdvNet counterexample",
+        "queue_packets": 100,
+        "segments": [
+          {
+            "bandwidth_kbps": 20000,
+            "delay_ms": 40,
+            "duration_ms": 10000
+          },
+          {
+            "bandwidth_kbps": 4000,
+            "delay_ms": 80,
+            "duration_ms": 10000
+          },
+          {
+            "bandwidth_kbps": 20000,
+            "delay_ms": 40,
+            "duration_ms": 10000
+          }
+        ]
+      },
+      "encoded_trace": [
+        40,
+        8,
+        40,
+        40,
+        80,
+        40,
+        200,
+        200,
+        200,
+        10
+      ],
+      "perturbation": {
+        "coordinate_index": 1,
+        "delta": -1000,
+        "delta_unit": "kbps",
+        "relative_to": 5000,
+        "actual_relative_change": -0.2
+      }
+    },
+    {
+      "variant_id": "v0014",
+      "trace_id": "8d8a65c689d7717087b1",
+      "parent_trace_id": "0eec24a5955a89167d9a",
+      "family": "bandwidth",
+      "magnitude": 0.2,
+      "trace": {
+        "schema_version": 1,
+        "description": "Synthetic pipeline fixture, not an AdvNet counterexample",
+        "queue_packets": 100,
+        "segments": [
+          {
+            "bandwidth_kbps": 21000,
+            "delay_ms": 40,
+            "duration_ms": 10000
+          },
+          {
+            "bandwidth_kbps": 5000,
+            "delay_ms": 80,
+            "duration_ms": 10000
+          },
+          {
+            "bandwidth_kbps": 20000,
+            "delay_ms": 40,
+            "duration_ms": 10000
+          }
+        ]
+      },
+      "encoded_trace": [
+        42,
+        10,
+        40,
+        40,
+        80,
+        40,
+        200,
+        200,
+        200,
+        10
+      ],
+      "perturbation": {
+        "coordinate_index": 0,
+        "delta": 1000,
+        "delta_unit": "kbps",
+        "relative_to": 20000,
+        "actual_relative_change": 0.05
+      }
+    },
+    {
+      "variant_id": "v0015",
+      "trace_id": "40c6e2ec04ec50fdf9ad",
+      "parent_trace_id": "0eec24a5955a89167d9a",
+      "family": "bandwidth",
+      "magnitude": 0.2,
+      "trace": {
+        "schema_version": 1,
+        "description": "Synthetic pipeline fixture, not an AdvNet counterexample",
+        "queue_packets": 100,
+        "segments": [
+          {
+            "bandwidth_kbps": 20000,
+            "delay_ms": 40,
+            "duration_ms": 10000
+          },
+          {
+            "bandwidth_kbps": 5000,
+            "delay_ms": 80,
+            "duration_ms": 10000
+          },
+          {
+            "bandwidth_kbps": 18000,
+            "delay_ms": 40,
+            "duration_ms": 10000
+          }
+        ]
+      },
+      "encoded_trace": [
+        40,
+        10,
+        36,
+        40,
+        80,
+        40,
+        200,
+        200,
+        200,
+        10
+      ],
+      "perturbation": {
+        "coordinate_index": 2,
+        "delta": -2000,
+        "delta_unit": "kbps",
+        "relative_to": 20000,
+        "actual_relative_change": -0.1
+      }
+    },
+    {
+      "variant_id": "v0016",
+      "trace_id": "3df68658f14ca3931fa8",
+      "parent_trace_id": "0eec24a5955a89167d9a",
+      "family": "delay",
+      "magnitude": 0.05,
+      "trace": {
+        "schema_version": 1,
+        "description": "Synthetic pipeline fixture, not an AdvNet counterexample",
+        "queue_packets": 100,
+        "segments": [
+          {
+            "bandwidth_kbps": 20000,
+            "delay_ms": 42,
+            "duration_ms": 10000
+          },
+          {
+            "bandwidth_kbps": 5000,
+            "delay_ms": 80,
+            "duration_ms": 10000
+          },
+          {
+            "bandwidth_kbps": 20000,
+            "delay_ms": 40,
+            "duration_ms": 10000
+          }
+        ]
+      },
+      "encoded_trace": [
+        40,
+        10,
+        40,
+        42,
+        80,
+        40,
+        200,
+        200,
+        200,
+        10
+      ],
+      "perturbation": {
+        "coordinate_index": 0,
+        "delta": 2,
+        "delta_unit": "ms",
+        "relative_to": 40,
+        "actual_relative_change": 0.05
+      }
+    },
+    {
+      "variant_id": "v0017",
+      "trace_id": "38119a2d6d7e0d28e067",
+      "parent_trace_id": "0eec24a5955a89167d9a",
+      "family": "delay",
+      "magnitude": 0.05,
+      "trace": {
+        "schema_version": 1,
+        "description": "Synthetic pipeline fixture, not an AdvNet counterexample",
+        "queue_packets": 100,
+        "segments": [
+          {
+            "bandwidth_kbps": 20000,
+            "delay_ms": 40,
+            "duration_ms": 10000
+          },
+          {
+            "bandwidth_kbps": 5000,
+            "delay_ms": 80,
+            "duration_ms": 10000
+          },
+          {
+            "bandwidth_kbps": 20000,
+            "delay_ms": 41,
+            "duration_ms": 10000
+          }
+        ]
+      },
+      "encoded_trace": [
+        40,
+        10,
+        40,
+        40,
+        80,
+        41,
+        200,
+        200,
+        200,
+        10
+      ],
+      "perturbation": {
+        "coordinate_index": 2,
+        "delta": 1,
+        "delta_unit": "ms",
+        "relative_to": 40,
+        "actual_relative_change": 0.025
+      }
+    },
+    {
+      "variant_id": "v0018",
+      "trace_id": "2156044d3c5deb69dde9",
+      "parent_trace_id": "0eec24a5955a89167d9a",
+      "family": "delay",
+      "magnitude": 0.05,
+      "trace": {
+        "schema_version": 1,
+        "description": "Synthetic pipeline fixture, not an AdvNet counterexample",
+        "queue_packets": 100,
+        "segments": [
+          {
+            "bandwidth_kbps": 20000,
+            "delay_ms": 40,
+            "duration_ms": 10000
+          },
+          {
+            "bandwidth_kbps": 5000,
+            "delay_ms": 80,
+            "duration_ms": 10000
+          },
+          {
+            "bandwidth_kbps": 20000,
+            "delay_ms": 38,
+            "duration_ms": 10000
+          }
+        ]
+      },
+      "encoded_trace": [
+        40,
+        10,
+        40,
+        40,
+        80,
+        38,
+        200,
+        200,
+        200,
+        10
+      ],
+      "perturbation": {
+        "coordinate_index": 2,
+        "delta": -2,
+        "delta_unit": "ms",
+        "relative_to": 40,
+        "actual_relative_change": -0.05
+      }
+    },
+    {
+      "variant_id": "v0019",
+      "trace_id": "f0a28f330c95e00d0138",
+      "parent_trace_id": "0eec24a5955a89167d9a",
+      "family": "delay",
+      "magnitude": 0.05,
+      "trace": {
+        "schema_version": 1,
+        "description": "Synthetic pipeline fixture, not an AdvNet counterexample",
+        "queue_packets": 100,
+        "segments": [
+          {
+            "bandwidth_kbps": 20000,
+            "delay_ms": 38,
+            "duration_ms": 10000
+          },
+          {
+            "bandwidth_kbps": 5000,
+            "delay_ms": 80,
+            "duration_ms": 10000
+          },
+          {
+            "bandwidth_kbps": 20000,
+            "delay_ms": 40,
+            "duration_ms": 10000
+          }
+        ]
+      },
+      "encoded_trace": [
+        40,
+        10,
+        40,
+        38,
+        80,
+        40,
+        200,
+        200,
+        200,
+        10
+      ],
+      "perturbation": {
+        "coordinate_index": 0,
+        "delta": -2,
+        "delta_unit": "ms",
+        "relative_to": 40,
+        "actual_relative_change": -0.05
+      }
+    },
+    {
+      "variant_id": "v0020",
+      "trace_id": "3929b9c1025229dce81f",
+      "parent_trace_id": "0eec24a5955a89167d9a",
+      "family": "delay",
+      "magnitude": 0.05,
+      "trace": {
+        "schema_version": 1,
+        "description": "Synthetic pipeline fixture, not an AdvNet counterexample",
+        "queue_packets": 100,
+        "segments": [
+          {
+            "bandwidth_kbps": 20000,
+            "delay_ms": 40,
+            "duration_ms": 10000
+          },
+          {
+            "bandwidth_kbps": 5000,
+            "delay_ms": 83,
+            "duration_ms": 10000
+          },
+          {
+            "bandwidth_kbps": 20000,
+            "delay_ms": 40,
+            "duration_ms": 10000
+          }
+        ]
+      },
+      "encoded_trace": [
+        40,
+        10,
+        40,
+        40,
+        83,
+        40,
+        200,
+        200,
+        200,
+        10
+      ],
+      "perturbation": {
+        "coordinate_index": 1,
+        "delta": 3,
+        "delta_unit": "ms",
+        "relative_to": 80,
+        "actual_relative_change": 0.0375
+      }
+    },
+    {
+      "variant_id": "v0021",
+      "trace_id": "d634a9e0ba81ee84917a",
+      "parent_trace_id": "0eec24a5955a89167d9a",
+      "family": "delay",
+      "magnitude": 0.1,
+      "trace": {
+        "schema_version": 1,
+        "description": "Synthetic pipeline fixture, not an AdvNet counterexample",
+        "queue_packets": 100,
+        "segments": [
+          {
+            "bandwidth_kbps": 20000,
+            "delay_ms": 40,
+            "duration_ms": 10000
+          },
+          {
+            "bandwidth_kbps": 5000,
+            "delay_ms": 80,
+            "duration_ms": 10000
+          },
+          {
+            "bandwidth_kbps": 20000,
+            "delay_ms": 39,
+            "duration_ms": 10000
+          }
+        ]
+      },
+      "encoded_trace": [
+        40,
+        10,
+        40,
+        40,
+        80,
+        39,
+        200,
+        200,
+        200,
+        10
+      ],
+      "perturbation": {
+        "coordinate_index": 2,
+        "delta": -1,
+        "delta_unit": "ms",
+        "relative_to": 40,
+        "actual_relative_change": -0.025
+      }
+    },
+    {
+      "variant_id": "v0022",
+      "trace_id": "3df68658f14ca3931fa8",
+      "parent_trace_id": "0eec24a5955a89167d9a",
+      "family": "delay",
+      "magnitude": 0.1,
+      "trace": {
+        "schema_version": 1,
+        "description": "Synthetic pipeline fixture, not an AdvNet counterexample",
+        "queue_packets": 100,
+        "segments": [
+          {
+            "bandwidth_kbps": 20000,
+            "delay_ms": 42,
+            "duration_ms": 10000
+          },
+          {
+            "bandwidth_kbps": 5000,
+            "delay_ms": 80,
+            "duration_ms": 10000
+          },
+          {
+            "bandwidth_kbps": 20000,
+            "delay_ms": 40,
+            "duration_ms": 10000
+          }
+        ]
+      },
+      "encoded_trace": [
+        40,
+        10,
+        40,
+        42,
+        80,
+        40,
+        200,
+        200,
+        200,
+        10
+      ],
+      "perturbation": {
+        "coordinate_index": 0,
+        "delta": 2,
+        "delta_unit": "ms",
+        "relative_to": 40,
+        "actual_relative_change": 0.05
+      }
+    },
+    {
+      "variant_id": "v0023",
+      "trace_id": "6b2b176ab89b7e9c12a7",
+      "parent_trace_id": "0eec24a5955a89167d9a",
+      "family": "delay",
+      "magnitude": 0.1,
+      "trace": {
+        "schema_version": 1,
+        "description": "Synthetic pipeline fixture, not an AdvNet counterexample",
+        "queue_packets": 100,
+        "segments": [
+          {
+            "bandwidth_kbps": 20000,
+            "delay_ms": 40,
+            "duration_ms": 10000
+          },
+          {
+            "bandwidth_kbps": 5000,
+            "delay_ms": 85,
+            "duration_ms": 10000
+          },
+          {
+            "bandwidth_kbps": 20000,
+            "delay_ms": 40,
+            "duration_ms": 10000
+          }
+        ]
+      },
+      "encoded_trace": [
+        40,
+        10,
+        40,
+        40,
+        85,
+        40,
+        200,
+        200,
+        200,
+        10
+      ],
+      "perturbation": {
+        "coordinate_index": 1,
+        "delta": 5,
+        "delta_unit": "ms",
+        "relative_to": 80,
+        "actual_relative_change": 0.0625
+      }
+    },
+    {
+      "variant_id": "v0024",
+      "trace_id": "f0a28f330c95e00d0138",
+      "parent_trace_id": "0eec24a5955a89167d9a",
+      "family": "delay",
+      "magnitude": 0.1,
+      "trace": {
+        "schema_version": 1,
+        "description": "Synthetic pipeline fixture, not an AdvNet counterexample",
+        "queue_packets": 100,
+        "segments": [
+          {
+            "bandwidth_kbps": 20000,
+            "delay_ms": 38,
+            "duration_ms": 10000
+          },
+          {
+            "bandwidth_kbps": 5000,
+            "delay_ms": 80,
+            "duration_ms": 10000
+          },
+          {
+            "bandwidth_kbps": 20000,
+            "delay_ms": 40,
+            "duration_ms": 10000
+          }
+        ]
+      },
+      "encoded_trace": [
+        40,
+        10,
+        40,
+        38,
+        80,
+        40,
+        200,
+        200,
+        200,
+        10
+      ],
+      "perturbation": {
+        "coordinate_index": 0,
+        "delta": -2,
+        "delta_unit": "ms",
+        "relative_to": 40,
+        "actual_relative_change": -0.05
+      }
+    },
+    {
+      "variant_id": "v0025",
+      "trace_id": "29ad47d95da046358162",
+      "parent_trace_id": "0eec24a5955a89167d9a",
+      "family": "delay",
+      "magnitude": 0.1,
+      "trace": {
+        "schema_version": 1,
+        "description": "Synthetic pipeline fixture, not an AdvNet counterexample",
+        "queue_packets": 100,
+        "segments": [
+          {
+            "bandwidth_kbps": 20000,
+            "delay_ms": 44,
+            "duration_ms": 10000
+          },
+          {
+            "bandwidth_kbps": 5000,
+            "delay_ms": 80,
+            "duration_ms": 10000
+          },
+          {
+            "bandwidth_kbps": 20000,
+            "delay_ms": 40,
+            "duration_ms": 10000
+          }
+        ]
+      },
+      "encoded_trace": [
+        40,
+        10,
+        40,
+        44,
+        80,
+        40,
+        200,
+        200,
+        200,
+        10
+      ],
+      "perturbation": {
+        "coordinate_index": 0,
+        "delta": 4,
+        "delta_unit": "ms",
+        "relative_to": 40,
+        "actual_relative_change": 0.1
+      }
+    },
+    {
+      "variant_id": "v0026",
+      "trace_id": "030bb122096ae220830e",
+      "parent_trace_id": "0eec24a5955a89167d9a",
+      "family": "delay",
+      "magnitude": 0.2,
+      "trace": {
+        "schema_version": 1,
+        "description": "Synthetic pipeline fixture, not an AdvNet counterexample",
+        "queue_packets": 100,
+        "segments": [
+          {
+            "bandwidth_kbps": 20000,
+            "delay_ms": 46,
+            "duration_ms": 10000
+          },
+          {
+            "bandwidth_kbps": 5000,
+            "delay_ms": 80,
+            "duration_ms": 10000
+          },
+          {
+            "bandwidth_kbps": 20000,
+            "delay_ms": 40,
+            "duration_ms": 10000
+          }
+        ]
+      },
+      "encoded_trace": [
+        40,
+        10,
+        40,
+        46,
+        80,
+        40,
+        200,
+        200,
+        200,
+        10
+      ],
+      "perturbation": {
+        "coordinate_index": 0,
+        "delta": 6,
+        "delta_unit": "ms",
+        "relative_to": 40,
+        "actual_relative_change": 0.15
+      }
+    },
+    {
+      "variant_id": "v0027",
+      "trace_id": "286d6503068ed2d542c5",
+      "parent_trace_id": "0eec24a5955a89167d9a",
+      "family": "delay",
+      "magnitude": 0.2,
+      "trace": {
+        "schema_version": 1,
+        "description": "Synthetic pipeline fixture, not an AdvNet counterexample",
+        "queue_packets": 100,
+        "segments": [
+          {
+            "bandwidth_kbps": 20000,
+            "delay_ms": 40,
+            "duration_ms": 10000
+          },
+          {
+            "bandwidth_kbps": 5000,
+            "delay_ms": 80,
+            "duration_ms": 10000
+          },
+          {
+            "bandwidth_kbps": 20000,
+            "delay_ms": 32,
+            "duration_ms": 10000
+          }
+        ]
+      },
+      "encoded_trace": [
+        40,
+        10,
+        40,
+        40,
+        80,
+        32,
+        200,
+        200,
+        200,
+        10
+      ],
+      "perturbation": {
+        "coordinate_index": 2,
+        "delta": -8,
+        "delta_unit": "ms",
+        "relative_to": 40,
+        "actual_relative_change": -0.2
+      }
+    },
+    {
+      "variant_id": "v0028",
+      "trace_id": "d467895ff7a1f42713a0",
+      "parent_trace_id": "0eec24a5955a89167d9a",
+      "family": "delay",
+      "magnitude": 0.2,
+      "trace": {
+        "schema_version": 1,
+        "description": "Synthetic pipeline fixture, not an AdvNet counterexample",
+        "queue_packets": 100,
+        "segments": [
+          {
+            "bandwidth_kbps": 20000,
+            "delay_ms": 47,
+            "duration_ms": 10000
+          },
+          {
+            "bandwidth_kbps": 5000,
+            "delay_ms": 80,
+            "duration_ms": 10000
+          },
+          {
+            "bandwidth_kbps": 20000,
+            "delay_ms": 40,
+            "duration_ms": 10000
+          }
+        ]
+      },
+      "encoded_trace": [
+        40,
+        10,
+        40,
+        47,
+        80,
+        40,
+        200,
+        200,
+        200,
+        10
+      ],
+      "perturbation": {
+        "coordinate_index": 0,
+        "delta": 7,
+        "delta_unit": "ms",
+        "relative_to": 40,
+        "actual_relative_change": 0.175
+      }
+    },
+    {
+      "variant_id": "v0029",
+      "trace_id": "eb58f8ab148c1d02f3d6",
+      "parent_trace_id": "0eec24a5955a89167d9a",
+      "family": "delay",
+      "magnitude": 0.2,
+      "trace": {
+        "schema_version": 1,
+        "description": "Synthetic pipeline fixture, not an AdvNet counterexample",
+        "queue_packets": 100,
+        "segments": [
+          {
+            "bandwidth_kbps": 20000,
+            "delay_ms": 40,
+            "duration_ms": 10000
+          },
+          {
+            "bandwidth_kbps": 5000,
+            "delay_ms": 91,
+            "duration_ms": 10000
+          },
+          {
+            "bandwidth_kbps": 20000,
+            "delay_ms": 40,
+            "duration_ms": 10000
+          }
+        ]
+      },
+      "encoded_trace": [
+        40,
+        10,
+        40,
+        40,
+        91,
+        40,
+        200,
+        200,
+        200,
+        10
+      ],
+      "perturbation": {
+        "coordinate_index": 1,
+        "delta": 11,
+        "delta_unit": "ms",
+        "relative_to": 80,
+        "actual_relative_change": 0.1375
+      }
+    },
+    {
+      "variant_id": "v0030",
+      "trace_id": "f39509153dd16d502fe2",
+      "parent_trace_id": "0eec24a5955a89167d9a",
+      "family": "delay",
+      "magnitude": 0.2,
+      "trace": {
+        "schema_version": 1,
+        "description": "Synthetic pipeline fixture, not an AdvNet counterexample",
+        "queue_packets": 100,
+        "segments": [
+          {
+            "bandwidth_kbps": 20000,
+            "delay_ms": 33,
+            "duration_ms": 10000
+          },
+          {
+            "bandwidth_kbps": 5000,
+            "delay_ms": 80,
+            "duration_ms": 10000
+          },
+          {
+            "bandwidth_kbps": 20000,
+            "delay_ms": 40,
+            "duration_ms": 10000
+          }
+        ]
+      },
+      "encoded_trace": [
+        40,
+        10,
+        40,
+        33,
+        80,
+        40,
+        200,
+        200,
+        200,
+        10
+      ],
+      "perturbation": {
+        "coordinate_index": 0,
+        "delta": -7,
+        "delta_unit": "ms",
+        "relative_to": 40,
+        "actual_relative_change": -0.175
+      }
+    },
+    {
+      "variant_id": "v0031",
+      "trace_id": "4c9c43e307942b180f5c",
+      "parent_trace_id": "0eec24a5955a89167d9a",
+      "family": "timing",
+      "magnitude": 0.05,
+      "trace": {
+        "schema_version": 1,
+        "description": "Synthetic pipeline fixture, not an AdvNet counterexample",
+        "queue_packets": 100,
+        "segments": [
+          {
+            "bandwidth_kbps": 20000,
+            "delay_ms": 40,
+            "duration_ms": 10100
+          },
+          {
+            "bandwidth_kbps": 5000,
+            "delay_ms": 80,
+            "duration_ms": 9900
+          },
+          {
+            "bandwidth_kbps": 20000,
+            "delay_ms": 40,
+            "duration_ms": 10000
+          }
+        ]
+      },
+      "encoded_trace": [
+        40,
+        10,
+        40,
+        40,
+        80,
+        40,
+        202,
+        198,
+        200,
+        10
+      ],
+      "perturbation": {
+        "coordinate_index": 0,
+        "delta": 100,
+        "delta_unit": "ms",
+        "relative_to": 10000,
+        "actual_relative_change": 0.01
+      }
+    },
+    {
+      "variant_id": "v0032",
+      "trace_id": "1c00e8f2de878c451fa0",
+      "parent_trace_id": "0eec24a5955a89167d9a",
+      "family": "timing",
+      "magnitude": 0.05,
+      "trace": {
+        "schema_version": 1,
+        "description": "Synthetic pipeline fixture, not an AdvNet counterexample",
+        "queue_packets": 100,
+        "segments": [
+          {
+            "bandwidth_kbps": 20000,
+            "delay_ms": 40,
+            "duration_ms": 9500
+          },
+          {
+            "bandwidth_kbps": 5000,
+            "delay_ms": 80,
+            "duration_ms": 10500
+          },
+          {
+            "bandwidth_kbps": 20000,
+            "delay_ms": 40,
+            "duration_ms": 10000
+          }
+        ]
+      },
+      "encoded_trace": [
+        40,
+        10,
+        40,
+        40,
+        80,
+        40,
+        190,
+        210,
+        200,
+        10
+      ],
+      "perturbation": {
+        "coordinate_index": 0,
+        "delta": -500,
+        "delta_unit": "ms",
+        "relative_to": 10000,
+        "actual_relative_change": -0.05
+      }
+    },
+    {
+      "variant_id": "v0033",
+      "trace_id": "dad20b7aa53655f82cda",
+      "parent_trace_id": "0eec24a5955a89167d9a",
+      "family": "timing",
+      "magnitude": 0.05,
+      "trace": {
+        "schema_version": 1,
+        "description": "Synthetic pipeline fixture, not an AdvNet counterexample",
+        "queue_packets": 100,
+        "segments": [
+          {
+            "bandwidth_kbps": 20000,
+            "delay_ms": 40,
+            "duration_ms": 10000
+          },
+          {
+            "bandwidth_kbps": 5000,
+            "delay_ms": 80,
+            "duration_ms": 10100
+          },
+          {
+            "bandwidth_kbps": 20000,
+            "delay_ms": 40,
+            "duration_ms": 9900
+          }
+        ]
+      },
+      "encoded_trace": [
+        40,
+        10,
+        40,
+        40,
+        80,
+        40,
+        200,
+        202,
+        198,
+        10
+      ],
+      "perturbation": {
+        "coordinate_index": 1,
+        "delta": 100,
+        "delta_unit": "ms",
+        "relative_to": 10000,
+        "actual_relative_change": 0.01
+      }
+    },
+    {
+      "variant_id": "v0034",
+      "trace_id": "4a99fe91cf7823cf9d54",
+      "parent_trace_id": "0eec24a5955a89167d9a",
+      "family": "timing",
+      "magnitude": 0.05,
+      "trace": {
+        "schema_version": 1,
+        "description": "Synthetic pipeline fixture, not an AdvNet counterexample",
+        "queue_packets": 100,
+        "segments": [
+          {
+            "bandwidth_kbps": 20000,
+            "delay_ms": 40,
+            "duration_ms": 10000
+          },
+          {
+            "bandwidth_kbps": 5000,
+            "delay_ms": 80,
+            "duration_ms": 10300
+          },
+          {
+            "bandwidth_kbps": 20000,
+            "delay_ms": 40,
+            "duration_ms": 9700
+          }
+        ]
+      },
+      "encoded_trace": [
+        40,
+        10,
+        40,
+        40,
+        80,
+        40,
+        200,
+        206,
+        194,
+        10
+      ],
+      "perturbation": {
+        "coordinate_index": 1,
+        "delta": 300,
+        "delta_unit": "ms",
+        "relative_to": 10000,
+        "actual_relative_change": 0.03
+      }
+    },
+    {
+      "variant_id": "v0035",
+      "trace_id": "bf31ae72dce41b6e2fad",
+      "parent_trace_id": "0eec24a5955a89167d9a",
+      "family": "timing",
+      "magnitude": 0.05,
+      "trace": {
+        "schema_version": 1,
+        "description": "Synthetic pipeline fixture, not an AdvNet counterexample",
+        "queue_packets": 100,
+        "segments": [
+          {
+            "bandwidth_kbps": 20000,
+            "delay_ms": 40,
+            "duration_ms": 10000
+          },
+          {
+            "bandwidth_kbps": 5000,
+            "delay_ms": 80,
+            "duration_ms": 9850
+          },
+          {
+            "bandwidth_kbps": 20000,
+            "delay_ms": 40,
+            "duration_ms": 10150
+          }
+        ]
+      },
+      "encoded_trace": [
+        40,
+        10,
+        40,
+        40,
+        80,
+        40,
+        200,
+        197,
+        203,
+        10
+      ],
+      "perturbation": {
+        "coordinate_index": 1,
+        "delta": -150,
+        "delta_unit": "ms",
+        "relative_to": 10000,
+        "actual_relative_change": -0.015
+      }
+    },
+    {
+      "variant_id": "v0036",
+      "trace_id": "ceeed007db97b57d6fb6",
+      "parent_trace_id": "0eec24a5955a89167d9a",
+      "family": "timing",
+      "magnitude": 0.1,
+      "trace": {
+        "schema_version": 1,
+        "description": "Synthetic pipeline fixture, not an AdvNet counterexample",
+        "queue_packets": 100,
+        "segments": [
+          {
+            "bandwidth_kbps": 20000,
+            "delay_ms": 40,
+            "duration_ms": 10000
+          },
+          {
+            "bandwidth_kbps": 5000,
+            "delay_ms": 80,
+            "duration_ms": 9250
+          },
+          {
+            "bandwidth_kbps": 20000,
+            "delay_ms": 40,
+            "duration_ms": 10750
+          }
+        ]
+      },
+      "encoded_trace": [
+        40,
+        10,
+        40,
+        40,
+        80,
+        40,
+        200,
+        185,
+        215,
+        10
+      ],
+      "perturbation": {
+        "coordinate_index": 1,
+        "delta": -750,
+        "delta_unit": "ms",
+        "relative_to": 10000,
+        "actual_relative_change": -0.075
+      }
+    },
+    {
+      "variant_id": "v0037",
+      "trace_id": "8023e5f6bbb6436d4257",
+      "parent_trace_id": "0eec24a5955a89167d9a",
+      "family": "timing",
+      "magnitude": 0.1,
+      "trace": {
+        "schema_version": 1,
+        "description": "Synthetic pipeline fixture, not an AdvNet counterexample",
+        "queue_packets": 100,
+        "segments": [
+          {
+            "bandwidth_kbps": 20000,
+            "delay_ms": 40,
+            "duration_ms": 10750
+          },
+          {
+            "bandwidth_kbps": 5000,
+            "delay_ms": 80,
+            "duration_ms": 9250
+          },
+          {
+            "bandwidth_kbps": 20000,
+            "delay_ms": 40,
+            "duration_ms": 10000
+          }
+        ]
+      },
+      "encoded_trace": [
+        40,
+        10,
+        40,
+        40,
+        80,
+        40,
+        215,
+        185,
+        200,
+        10
+      ],
+      "perturbation": {
+        "coordinate_index": 0,
+        "delta": 750,
+        "delta_unit": "ms",
+        "relative_to": 10000,
+        "actual_relative_change": 0.075
+      }
+    },
+    {
+      "variant_id": "v0038",
+      "trace_id": "611c8fc4ae34a1ea3bdc",
+      "parent_trace_id": "0eec24a5955a89167d9a",
+      "family": "timing",
+      "magnitude": 0.1,
+      "trace": {
+        "schema_version": 1,
+        "description": "Synthetic pipeline fixture, not an AdvNet counterexample",
+        "queue_packets": 100,
+        "segments": [
+          {
+            "bandwidth_kbps": 20000,
+            "delay_ms": 40,
+            "duration_ms": 9550
+          },
+          {
+            "bandwidth_kbps": 5000,
+            "delay_ms": 80,
+            "duration_ms": 10450
+          },
+          {
+            "bandwidth_kbps": 20000,
+            "delay_ms": 40,
+            "duration_ms": 10000
+          }
+        ]
+      },
+      "encoded_trace": [
+        40,
+        10,
+        40,
+        40,
+        80,
+        40,
+        191,
+        209,
+        200,
+        10
+      ],
+      "perturbation": {
+        "coordinate_index": 0,
+        "delta": -450,
+        "delta_unit": "ms",
+        "relative_to": 10000,
+        "actual_relative_change": -0.045
+      }
+    },
+    {
+      "variant_id": "v0039",
+      "trace_id": "e13cfa29fe3b89f96b25",
+      "parent_trace_id": "0eec24a5955a89167d9a",
+      "family": "timing",
+      "magnitude": 0.1,
+      "trace": {
+        "schema_version": 1,
+        "description": "Synthetic pipeline fixture, not an AdvNet counterexample",
+        "queue_packets": 100,
+        "segments": [
+          {
+            "bandwidth_kbps": 20000,
+            "delay_ms": 40,
+            "duration_ms": 10000
+          },
+          {
+            "bandwidth_kbps": 5000,
+            "delay_ms": 80,
+            "duration_ms": 10650
+          },
+          {
+            "bandwidth_kbps": 20000,
+            "delay_ms": 40,
+            "duration_ms": 9350
+          }
+        ]
+      },
+      "encoded_trace": [
+        40,
+        10,
+        40,
+        40,
+        80,
+        40,
+        200,
+        213,
+        187,
+        10
+      ],
+      "perturbation": {
+        "coordinate_index": 1,
+        "delta": 650,
+        "delta_unit": "ms",
+        "relative_to": 10000,
+        "actual_relative_change": 0.065
+      }
+    },
+    {
+      "variant_id": "v0040",
+      "trace_id": "893384f100223ed93fcb",
+      "parent_trace_id": "0eec24a5955a89167d9a",
+      "family": "timing",
+      "magnitude": 0.1,
+      "trace": {
+        "schema_version": 1,
+        "description": "Synthetic pipeline fixture, not an AdvNet counterexample",
+        "queue_packets": 100,
+        "segments": [
+          {
+            "bandwidth_kbps": 20000,
+            "delay_ms": 40,
+            "duration_ms": 10000
+          },
+          {
+            "bandwidth_kbps": 5000,
+            "delay_ms": 80,
+            "duration_ms": 10450
+          },
+          {
+            "bandwidth_kbps": 20000,
+            "delay_ms": 40,
+            "duration_ms": 9550
+          }
+        ]
+      },
+      "encoded_trace": [
+        40,
+        10,
+        40,
+        40,
+        80,
+        40,
+        200,
+        209,
+        191,
+        10
+      ],
+      "perturbation": {
+        "coordinate_index": 1,
+        "delta": 450,
+        "delta_unit": "ms",
+        "relative_to": 10000,
+        "actual_relative_change": 0.045
+      }
+    },
+    {
+      "variant_id": "v0041",
+      "trace_id": "47a2ce5008aed8a0f381",
+      "parent_trace_id": "0eec24a5955a89167d9a",
+      "family": "timing",
+      "magnitude": 0.2,
+      "trace": {
+        "schema_version": 1,
+        "description": "Synthetic pipeline fixture, not an AdvNet counterexample",
+        "queue_packets": 100,
+        "segments": [
+          {
+            "bandwidth_kbps": 20000,
+            "delay_ms": 40,
+            "duration_ms": 9950
+          },
+          {
+            "bandwidth_kbps": 5000,
+            "delay_ms": 80,
+            "duration_ms": 10050
+          },
+          {
+            "bandwidth_kbps": 20000,
+            "delay_ms": 40,
+            "duration_ms": 10000
+          }
+        ]
+      },
+      "encoded_trace": [
+        40,
+        10,
+        40,
+        40,
+        80,
+        40,
+        199,
+        201,
+        200,
+        10
+      ],
+      "perturbation": {
+        "coordinate_index": 0,
+        "delta": -50,
+        "delta_unit": "ms",
+        "relative_to": 10000,
+        "actual_relative_change": -0.005
+      }
+    },
+    {
+      "variant_id": "v0042",
+      "trace_id": "60f8dcdcaa12c69d63c0",
+      "parent_trace_id": "0eec24a5955a89167d9a",
+      "family": "timing",
+      "magnitude": 0.2,
+      "trace": {
+        "schema_version": 1,
+        "description": "Synthetic pipeline fixture, not an AdvNet counterexample",
+        "queue_packets": 100,
+        "segments": [
+          {
+            "bandwidth_kbps": 20000,
+            "delay_ms": 40,
+            "duration_ms": 10000
+          },
+          {
+            "bandwidth_kbps": 5000,
+            "delay_ms": 80,
+            "duration_ms": 11800
+          },
+          {
+            "bandwidth_kbps": 20000,
+            "delay_ms": 40,
+            "duration_ms": 8200
+          }
+        ]
+      },
+      "encoded_trace": [
+        40,
+        10,
+        40,
+        40,
+        80,
+        40,
+        200,
+        236,
+        164,
+        10
+      ],
+      "perturbation": {
+        "coordinate_index": 1,
+        "delta": 1800,
+        "delta_unit": "ms",
+        "relative_to": 10000,
+        "actual_relative_change": 0.18
+      }
+    },
+    {
+      "variant_id": "v0043",
+      "trace_id": "ffb918b881d7c10ccc99",
+      "parent_trace_id": "0eec24a5955a89167d9a",
+      "family": "timing",
+      "magnitude": 0.2,
+      "trace": {
+        "schema_version": 1,
+        "description": "Synthetic pipeline fixture, not an AdvNet counterexample",
+        "queue_packets": 100,
+        "segments": [
+          {
+            "bandwidth_kbps": 20000,
+            "delay_ms": 40,
+            "duration_ms": 10000
+          },
+          {
+            "bandwidth_kbps": 5000,
+            "delay_ms": 80,
+            "duration_ms": 9050
+          },
+          {
+            "bandwidth_kbps": 20000,
+            "delay_ms": 40,
+            "duration_ms": 10950
+          }
+        ]
+      },
+      "encoded_trace": [
+        40,
+        10,
+        40,
+        40,
+        80,
+        40,
+        200,
+        181,
+        219,
+        10
+      ],
+      "perturbation": {
+        "coordinate_index": 1,
+        "delta": -950,
+        "delta_unit": "ms",
+        "relative_to": 10000,
+        "actual_relative_change": -0.095
+      }
+    },
+    {
+      "variant_id": "v0044",
+      "trace_id": "81a7f28f796f420afd17",
+      "parent_trace_id": "0eec24a5955a89167d9a",
+      "family": "timing",
+      "magnitude": 0.2,
+      "trace": {
+        "schema_version": 1,
+        "description": "Synthetic pipeline fixture, not an AdvNet counterexample",
+        "queue_packets": 100,
+        "segments": [
+          {
+            "bandwidth_kbps": 20000,
+            "delay_ms": 40,
+            "duration_ms": 11700
+          },
+          {
+            "bandwidth_kbps": 5000,
+            "delay_ms": 80,
+            "duration_ms": 8300
+          },
+          {
+            "bandwidth_kbps": 20000,
+            "delay_ms": 40,
+            "duration_ms": 10000
+          }
+        ]
+      },
+      "encoded_trace": [
+        40,
+        10,
+        40,
+        40,
+        80,
+        40,
+        234,
+        166,
+        200,
+        10
+      ],
+      "perturbation": {
+        "coordinate_index": 0,
+        "delta": 1700,
+        "delta_unit": "ms",
+        "relative_to": 10000,
+        "actual_relative_change": 0.17
+      }
+    },
+    {
+      "variant_id": "v0045",
+      "trace_id": "9d89ea59c3be33c0b2bb",
+      "parent_trace_id": "0eec24a5955a89167d9a",
+      "family": "timing",
+      "magnitude": 0.2,
+      "trace": {
+        "schema_version": 1,
+        "description": "Synthetic pipeline fixture, not an AdvNet counterexample",
+        "queue_packets": 100,
+        "segments": [
+          {
+            "bandwidth_kbps": 20000,
+            "delay_ms": 40,
+            "duration_ms": 10000
+          },
+          {
+            "bandwidth_kbps": 5000,
+            "delay_ms": 80,
+            "duration_ms": 10350
+          },
+          {
+            "bandwidth_kbps": 20000,
+            "delay_ms": 40,
+            "duration_ms": 9650
+          }
+        ]
+      },
+      "encoded_trace": [
+        40,
+        10,
+        40,
+        40,
+        80,
+        40,
+        200,
+        207,
+        193,
+        10
+      ],
+      "perturbation": {
+        "coordinate_index": 1,
+        "delta": 350,
+        "delta_unit": "ms",
+        "relative_to": 10000,
+        "actual_relative_change": 0.035
+      }
+    }
+  ],
+  "runs": [
+    {
+      "run_id": "v0004-r002",
+      "variant_id": "v0004",
+      "repeat_index": 2,
+      "order": "reference_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0034-r000",
+      "variant_id": "v0034",
+      "repeat_index": 0,
+      "order": "reference_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0022-r000",
+      "variant_id": "v0022",
+      "repeat_index": 0,
+      "order": "reference_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0011-r001",
+      "variant_id": "v0011",
+      "repeat_index": 1,
+      "order": "reference_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0039-r000",
+      "variant_id": "v0039",
+      "repeat_index": 0,
+      "order": "target_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0020-r001",
+      "variant_id": "v0020",
+      "repeat_index": 1,
+      "order": "target_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0042-r001",
+      "variant_id": "v0042",
+      "repeat_index": 1,
+      "order": "target_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0018-r002",
+      "variant_id": "v0018",
+      "repeat_index": 2,
+      "order": "reference_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0006-r000",
+      "variant_id": "v0006",
+      "repeat_index": 0,
+      "order": "reference_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0035-r000",
+      "variant_id": "v0035",
+      "repeat_index": 0,
+      "order": "reference_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0019-r002",
+      "variant_id": "v0019",
+      "repeat_index": 2,
+      "order": "target_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0023-r000",
+      "variant_id": "v0023",
+      "repeat_index": 0,
+      "order": "reference_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0038-r001",
+      "variant_id": "v0038",
+      "repeat_index": 1,
+      "order": "target_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0029-r000",
+      "variant_id": "v0029",
+      "repeat_index": 0,
+      "order": "reference_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0035-r001",
+      "variant_id": "v0035",
+      "repeat_index": 1,
+      "order": "target_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0033-r001",
+      "variant_id": "v0033",
+      "repeat_index": 1,
+      "order": "target_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "baseline-r003",
+      "variant_id": "baseline",
+      "repeat_index": 3,
+      "order": "target_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0009-r000",
+      "variant_id": "v0009",
+      "repeat_index": 0,
+      "order": "target_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0027-r001",
+      "variant_id": "v0027",
+      "repeat_index": 1,
+      "order": "reference_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0040-r000",
+      "variant_id": "v0040",
+      "repeat_index": 0,
+      "order": "reference_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0013-r002",
+      "variant_id": "v0013",
+      "repeat_index": 2,
+      "order": "reference_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0030-r002",
+      "variant_id": "v0030",
+      "repeat_index": 2,
+      "order": "target_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0010-r000",
+      "variant_id": "v0010",
+      "repeat_index": 0,
+      "order": "reference_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0007-r000",
+      "variant_id": "v0007",
+      "repeat_index": 0,
+      "order": "target_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0043-r001",
+      "variant_id": "v0043",
+      "repeat_index": 1,
+      "order": "target_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0025-r002",
+      "variant_id": "v0025",
+      "repeat_index": 2,
+      "order": "reference_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0028-r000",
+      "variant_id": "v0028",
+      "repeat_index": 0,
+      "order": "target_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0039-r002",
+      "variant_id": "v0039",
+      "repeat_index": 2,
+      "order": "target_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0045-r002",
+      "variant_id": "v0045",
+      "repeat_index": 2,
+      "order": "target_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0036-r000",
+      "variant_id": "v0036",
+      "repeat_index": 0,
+      "order": "reference_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "baseline-r004",
+      "variant_id": "baseline",
+      "repeat_index": 4,
+      "order": "reference_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0004-r001",
+      "variant_id": "v0004",
+      "repeat_index": 1,
+      "order": "target_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0033-r000",
+      "variant_id": "v0033",
+      "repeat_index": 0,
+      "order": "target_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0006-r002",
+      "variant_id": "v0006",
+      "repeat_index": 2,
+      "order": "reference_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0029-r001",
+      "variant_id": "v0029",
+      "repeat_index": 1,
+      "order": "target_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0019-r000",
+      "variant_id": "v0019",
+      "repeat_index": 0,
+      "order": "target_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0026-r001",
+      "variant_id": "v0026",
+      "repeat_index": 1,
+      "order": "target_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0012-r000",
+      "variant_id": "v0012",
+      "repeat_index": 0,
+      "order": "reference_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0011-r000",
+      "variant_id": "v0011",
+      "repeat_index": 0,
+      "order": "reference_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0030-r000",
+      "variant_id": "v0030",
+      "repeat_index": 0,
+      "order": "reference_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0007-r002",
+      "variant_id": "v0007",
+      "repeat_index": 2,
+      "order": "reference_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0038-r002",
+      "variant_id": "v0038",
+      "repeat_index": 2,
+      "order": "reference_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0036-r001",
+      "variant_id": "v0036",
+      "repeat_index": 1,
+      "order": "target_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0013-r001",
+      "variant_id": "v0013",
+      "repeat_index": 1,
+      "order": "target_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0041-r000",
+      "variant_id": "v0041",
+      "repeat_index": 0,
+      "order": "target_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0017-r001",
+      "variant_id": "v0017",
+      "repeat_index": 1,
+      "order": "reference_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0017-r002",
+      "variant_id": "v0017",
+      "repeat_index": 2,
+      "order": "reference_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0026-r002",
+      "variant_id": "v0026",
+      "repeat_index": 2,
+      "order": "target_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0024-r001",
+      "variant_id": "v0024",
+      "repeat_index": 1,
+      "order": "target_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0045-r000",
+      "variant_id": "v0045",
+      "repeat_index": 0,
+      "order": "target_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "baseline-r001",
+      "variant_id": "baseline",
+      "repeat_index": 1,
+      "order": "reference_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0002-r001",
+      "variant_id": "v0002",
+      "repeat_index": 1,
+      "order": "reference_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0045-r001",
+      "variant_id": "v0045",
+      "repeat_index": 1,
+      "order": "reference_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0020-r000",
+      "variant_id": "v0020",
+      "repeat_index": 0,
+      "order": "reference_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0031-r000",
+      "variant_id": "v0031",
+      "repeat_index": 0,
+      "order": "target_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0006-r001",
+      "variant_id": "v0006",
+      "repeat_index": 1,
+      "order": "reference_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0038-r000",
+      "variant_id": "v0038",
+      "repeat_index": 0,
+      "order": "reference_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0002-r002",
+      "variant_id": "v0002",
+      "repeat_index": 2,
+      "order": "target_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0016-r002",
+      "variant_id": "v0016",
+      "repeat_index": 2,
+      "order": "target_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0041-r002",
+      "variant_id": "v0041",
+      "repeat_index": 2,
+      "order": "target_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0016-r001",
+      "variant_id": "v0016",
+      "repeat_index": 1,
+      "order": "reference_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0010-r001",
+      "variant_id": "v0010",
+      "repeat_index": 1,
+      "order": "reference_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0022-r001",
+      "variant_id": "v0022",
+      "repeat_index": 1,
+      "order": "reference_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0004-r000",
+      "variant_id": "v0004",
+      "repeat_index": 0,
+      "order": "reference_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0040-r001",
+      "variant_id": "v0040",
+      "repeat_index": 1,
+      "order": "reference_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0026-r000",
+      "variant_id": "v0026",
+      "repeat_index": 0,
+      "order": "target_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0025-r001",
+      "variant_id": "v0025",
+      "repeat_index": 1,
+      "order": "target_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0003-r002",
+      "variant_id": "v0003",
+      "repeat_index": 2,
+      "order": "target_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0035-r002",
+      "variant_id": "v0035",
+      "repeat_index": 2,
+      "order": "reference_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0037-r002",
+      "variant_id": "v0037",
+      "repeat_index": 2,
+      "order": "target_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0005-r002",
+      "variant_id": "v0005",
+      "repeat_index": 2,
+      "order": "reference_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0014-r000",
+      "variant_id": "v0014",
+      "repeat_index": 0,
+      "order": "reference_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0015-r000",
+      "variant_id": "v0015",
+      "repeat_index": 0,
+      "order": "target_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0033-r002",
+      "variant_id": "v0033",
+      "repeat_index": 2,
+      "order": "target_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0022-r002",
+      "variant_id": "v0022",
+      "repeat_index": 2,
+      "order": "reference_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0013-r000",
+      "variant_id": "v0013",
+      "repeat_index": 0,
+      "order": "reference_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0023-r002",
+      "variant_id": "v0023",
+      "repeat_index": 2,
+      "order": "reference_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0009-r002",
+      "variant_id": "v0009",
+      "repeat_index": 2,
+      "order": "reference_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0032-r000",
+      "variant_id": "v0032",
+      "repeat_index": 0,
+      "order": "reference_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0011-r002",
+      "variant_id": "v0011",
+      "repeat_index": 2,
+      "order": "reference_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0016-r000",
+      "variant_id": "v0016",
+      "repeat_index": 0,
+      "order": "target_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0021-r000",
+      "variant_id": "v0021",
+      "repeat_index": 0,
+      "order": "target_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0042-r002",
+      "variant_id": "v0042",
+      "repeat_index": 2,
+      "order": "reference_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0039-r001",
+      "variant_id": "v0039",
+      "repeat_index": 1,
+      "order": "reference_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0024-r002",
+      "variant_id": "v0024",
+      "repeat_index": 2,
+      "order": "target_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0040-r002",
+      "variant_id": "v0040",
+      "repeat_index": 2,
+      "order": "target_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0014-r001",
+      "variant_id": "v0014",
+      "repeat_index": 1,
+      "order": "reference_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0005-r000",
+      "variant_id": "v0005",
+      "repeat_index": 0,
+      "order": "target_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0021-r001",
+      "variant_id": "v0021",
+      "repeat_index": 1,
+      "order": "reference_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0025-r000",
+      "variant_id": "v0025",
+      "repeat_index": 0,
+      "order": "target_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "baseline-r002",
+      "variant_id": "baseline",
+      "repeat_index": 2,
+      "order": "target_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0034-r002",
+      "variant_id": "v0034",
+      "repeat_index": 2,
+      "order": "reference_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0008-r001",
+      "variant_id": "v0008",
+      "repeat_index": 1,
+      "order": "reference_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0001-r002",
+      "variant_id": "v0001",
+      "repeat_index": 2,
+      "order": "target_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0002-r000",
+      "variant_id": "v0002",
+      "repeat_index": 0,
+      "order": "reference_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "baseline-r000",
+      "variant_id": "baseline",
+      "repeat_index": 0,
+      "order": "target_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0030-r001",
+      "variant_id": "v0030",
+      "repeat_index": 1,
+      "order": "target_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0012-r002",
+      "variant_id": "v0012",
+      "repeat_index": 2,
+      "order": "target_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0044-r001",
+      "variant_id": "v0044",
+      "repeat_index": 1,
+      "order": "reference_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0036-r002",
+      "variant_id": "v0036",
+      "repeat_index": 2,
+      "order": "reference_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0015-r002",
+      "variant_id": "v0015",
+      "repeat_index": 2,
+      "order": "reference_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0037-r001",
+      "variant_id": "v0037",
+      "repeat_index": 1,
+      "order": "target_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0008-r002",
+      "variant_id": "v0008",
+      "repeat_index": 2,
+      "order": "reference_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0041-r001",
+      "variant_id": "v0041",
+      "repeat_index": 1,
+      "order": "reference_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0007-r001",
+      "variant_id": "v0007",
+      "repeat_index": 1,
+      "order": "target_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0043-r000",
+      "variant_id": "v0043",
+      "repeat_index": 0,
+      "order": "target_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0019-r001",
+      "variant_id": "v0019",
+      "repeat_index": 1,
+      "order": "reference_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0005-r001",
+      "variant_id": "v0005",
+      "repeat_index": 1,
+      "order": "reference_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0034-r001",
+      "variant_id": "v0034",
+      "repeat_index": 1,
+      "order": "reference_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0031-r001",
+      "variant_id": "v0031",
+      "repeat_index": 1,
+      "order": "reference_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0018-r000",
+      "variant_id": "v0018",
+      "repeat_index": 0,
+      "order": "target_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0028-r001",
+      "variant_id": "v0028",
+      "repeat_index": 1,
+      "order": "target_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0003-r000",
+      "variant_id": "v0003",
+      "repeat_index": 0,
+      "order": "target_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0029-r002",
+      "variant_id": "v0029",
+      "repeat_index": 2,
+      "order": "target_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0024-r000",
+      "variant_id": "v0024",
+      "repeat_index": 0,
+      "order": "reference_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0001-r001",
+      "variant_id": "v0001",
+      "repeat_index": 1,
+      "order": "reference_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0012-r001",
+      "variant_id": "v0012",
+      "repeat_index": 1,
+      "order": "reference_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0014-r002",
+      "variant_id": "v0014",
+      "repeat_index": 2,
+      "order": "target_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0003-r001",
+      "variant_id": "v0003",
+      "repeat_index": 1,
+      "order": "target_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0023-r001",
+      "variant_id": "v0023",
+      "repeat_index": 1,
+      "order": "target_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0001-r000",
+      "variant_id": "v0001",
+      "repeat_index": 0,
+      "order": "target_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0028-r002",
+      "variant_id": "v0028",
+      "repeat_index": 2,
+      "order": "target_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0044-r000",
+      "variant_id": "v0044",
+      "repeat_index": 0,
+      "order": "reference_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0015-r001",
+      "variant_id": "v0015",
+      "repeat_index": 1,
+      "order": "target_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0010-r002",
+      "variant_id": "v0010",
+      "repeat_index": 2,
+      "order": "target_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0027-r002",
+      "variant_id": "v0027",
+      "repeat_index": 2,
+      "order": "reference_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0017-r000",
+      "variant_id": "v0017",
+      "repeat_index": 0,
+      "order": "reference_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0037-r000",
+      "variant_id": "v0037",
+      "repeat_index": 0,
+      "order": "reference_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0042-r000",
+      "variant_id": "v0042",
+      "repeat_index": 0,
+      "order": "reference_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0021-r002",
+      "variant_id": "v0021",
+      "repeat_index": 2,
+      "order": "target_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0020-r002",
+      "variant_id": "v0020",
+      "repeat_index": 2,
+      "order": "reference_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0008-r000",
+      "variant_id": "v0008",
+      "repeat_index": 0,
+      "order": "target_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0018-r001",
+      "variant_id": "v0018",
+      "repeat_index": 1,
+      "order": "reference_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0009-r001",
+      "variant_id": "v0009",
+      "repeat_index": 1,
+      "order": "target_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0044-r002",
+      "variant_id": "v0044",
+      "repeat_index": 2,
+      "order": "reference_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0027-r000",
+      "variant_id": "v0027",
+      "repeat_index": 0,
+      "order": "reference_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0032-r001",
+      "variant_id": "v0032",
+      "repeat_index": 1,
+      "order": "target_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0031-r002",
+      "variant_id": "v0031",
+      "repeat_index": 2,
+      "order": "reference_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0032-r002",
+      "variant_id": "v0032",
+      "repeat_index": 2,
+      "order": "target_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    },
+    {
+      "run_id": "v0043-r002",
+      "variant_id": "v0043",
+      "repeat_index": 2,
+      "order": "target_first",
+      "target": "bbr",
+      "reference": "cubic",
+      "score_scheme": "throughput_symmedian_v1"
+    }
+  ],
+  "budget": {
+    "planned_pair_runs": 140,
+    "minimum_protocol_executions": 280
+  },
+  "notes": [
+    "Unique nonzero perturbations within each cell; rejection sampling, no clipping.",
+    "Same physical variant may appear in different magnitude cells; retain IDs.",
+    "Timing moves a joint bandwidth/delay boundary; total duration and queue stay fixed.",
+    "Seed controls perturbation and schedule only, not kernel nondeterminism."
+  ]
+}
